@@ -1,0 +1,27 @@
+20070723 Version 1.60:
+----------------------
+(By kalkin)
+
+- rewrote the botfilter. Now it's smarter.
+- the graphs can be maximal 200px large
+- the bar colors are now relative.
+
+20070121 Version 1.50:
+----------------------
+(By kalkin)
+
+- added lots of bots
+- now the plugin just count each ip as an visitor at this day, not evry refresh
+
+Version 1.40:
+-------------
+
+(By Shrikee / Arnan)
+
+- added a database table which holds daily stats.
+- 2 graphs which use the data in the above table
+- rewrote the bots filter
+- added a config option to show only visitor stats or show everything (post counts and such)
+- option to enable or disable the bot filter
+- fixed the referer register. They werent added in the database, now they are
+- if either $useragent, $referer or $remote_addr is empty or unknown its set to unknown.

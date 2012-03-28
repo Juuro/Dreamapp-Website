@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ParaNews 3.3a</title>
+<meta http-equiv="Content-Type" content="text/html"; charset="iso-8859-1">
+<meta name="description" content="ParaNews 3.3 Newssystem">
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0"> 
+<h2>.news</h2>
+<!-- BEGIN LOOP -->
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="1" class="rahmen">
+  <tr> 
+    <td width="85%"> 
+      <div align="left"><b>%%newsnr%% %%title%%</b><small> - by %%autor%%</small></div>
+    </td>
+    <td width="15%"> 
+      <div align="right">
+        <small>[%%datum%%]</small>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top">%%news%%</td>
+    <td align="center" valign="top"><br>
+    %%cat%%<br>
+    <br></td>
+  </tr>
+  <tr valign="bottom">
+    <td width="85%"><small>%%readmore%%</small></td>
+    <td width="15%"><small>%%comments%%</small></td>
+  </tr>
+</table>
+
+<br />
+<!-- END LOOP -->
+<br /><br />
+<!-- BEGIN COMMENTSHEADER -->
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="1" class="rahmen">
+  <tr align="center">
+    <td colspan="2"><b>Kommentare</b></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">%%commentscount%% Kommentare vorhanden</td>
+    <td width="50%" align="center"><a href="#writecomment">Kommentar schreiben</a></td>
+  </tr>
+</table>
+<br />
+<!-- END COMMENTSHEADER -->
+<!-- BEGIN COMMENTS -->
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="1" class="rahmen">
+  <tr> 
+    <td width="25%"> 
+      <div align="left"><b>%%commentnr%% </b></div>
+    </td>
+    <td width="75%"> 
+      <div align="right">
+        <small><small>%%datum%% by %%autor%%</small> </small>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2">%%comment%%</td>
+  </tr>
+</table>
+<br />
+<!-- END COMMENTS -->
+<!-- BEGIN COMMENTFORM -->
+<form action="%%saveurl%%" method="post">
+<input type="hidden" name="commentid" value="%%commentid%%">
+<input type="hidden" name="backurl" value="%%backurl%%">
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="1" class="rahmen">
+  <tr align="center">
+    <td colspan="2" width="60%"><b>Kommentar schreiben<a name="writecomment"></a></b></td>
+    <td width="40%" rowspan="6">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%" align="center"><b>Nickname</b></td>
+    <td width="30%" align="center"><b>eMail-Adresse</b> (optional)</td>
+    </tr>
+  <tr>
+    <td width="30%" align="center"><input type="text" name="name" size="20"></td>
+    <td width="30%" align="center"><input type="text" name="email" size="20"></td>
+    </tr>
+  <tr>
+    <td colspan="2" width="60%" align="left"><b>Kommentar</b></td>
+    </tr>
+  <tr align="left">
+    <td colspan="2" width="60%"><textarea name="comment" cols="70" rows="5"></textarea></td>
+    </tr>
+  <tr>
+    <td colspan="2" align="left" width="60%"><input type="SUBMIT" value="Save"></td>
+    </tr>
+</table>
+</form>
+<br />
+<!-- END COMMENTFORM -->
+<div align="center">%%backlink%%</div>
+<br />
+<p align="center">%%last%% %%top%% %%next%%</p>
+<div align="center"><a href="news/admin/" target="_blank">Admin-Bereich</a></div>
+</body>
+</html>

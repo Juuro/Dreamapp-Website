@@ -1,0 +1,1 @@
+CREATE TABLE passwort (id BIGINT UNSIGNED not null AUTO_INCREMENT, username VARCHAR (50) not null , passwort TEXT not null , PRIMARY KEY (id), UNIQUE (username))

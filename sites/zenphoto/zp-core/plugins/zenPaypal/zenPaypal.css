@@ -1,0 +1,55 @@
+#BuyNow {
+	background:#f7f7f7;
+	border:1px solid #ccc;
+	text-align:center;
+	padding:10px;
+	margin:0 0 10px;
+	width: 200px;
+}
+#BuyNow input.buynow_button {
+	display:block;
+	clear:both;
+	text-align:center;
+	margin:10px auto 0;
+}
+
+/* Paypal price list */
+#zenPaypalPricelist, zenPaypalPricelist_data {
+	text-align: center;
+  position: relative;
+  display: block;
+}
+
+#zenPaypalPricelist l1 {
+	text-align: center;
+}
+
+#zenPaypalPricelist_data table {
+  line-height: 1em;
+  border: 1px solid #ccc;
+  top: 2em;
+  right: 0px;
+  background-color: #fafafa;
+  padding: 5px 8px;
+}
+
+#zenPaypalPricelist_data th {
+	text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f8f8f8;
+  padding: 5px 8px;
+}
+#zenPaypalPricelist_data td {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f8f8f8;
+  padding: 5px 8px;
+}
+#zenPaypalPricelist_data table .price {
+	text-align: right;
+}
+#zenPaypalPricelist_data table .size {
+	text-align: center;
+}
+#zenPaypalPricelist_data table .media {
+	text-align: left;
+}

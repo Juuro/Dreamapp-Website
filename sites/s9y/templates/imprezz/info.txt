@@ -1,0 +1,4 @@
+Name: Imprezz 
+Author: Gopal Raju, Productive Dreams<br /><i>Ported to s9y by Matthias 'YellowLed' Mees.</i>
+Date: 2009-11-19
+Require Serendipity: 1.1

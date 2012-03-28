@@ -1,0 +1,191 @@
+.plainList {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.serendipity_center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.serendipity_msg_important { color: red; }
+
+.serendipity_msg_notice { color: green; }
+
+.post { clear: both; }
+
+.sidebar-plugin {
+    margin: 0px auto;
+    width: 80%;
+}
+
+#sidebar ul li .sidebar-plugin *,
+.sidebar-plugin a {
+    color: #888d8f;
+    font-family: Helvetica, Arial, Verdana;
+    font-size: 13px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.CommWidth h3#trackbacks{
+    background: #242f31;
+    color: #fff;
+    padding-left: 10px;
+    margin: 10px auto;
+}
+
+#trackback-url { margin-bottom: 15px; }
+
+.nocomments { border-top: 2px solid #7ba2ad!important; }
+
+.narrowcolumn #commentform .check_fields label {
+    display: inline;
+    float: none;
+    text-align: left !important;
+    width: auto;
+}
+
+input#preview {
+    border: 1px solid #7BA2AD;
+    padding: 10px;
+    font-family: Helvetica, Arial, Verdana;
+    background: #242f31;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#commentform input#preview { float: right; }
+
+.serendipity_commentDirection { margin-bottom: 10px; }
+
+.serendipity_entrypaging {
+    border: 0 none;
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align:center;
+}
+
+.epicon { display: none; }
+
+.serendipity_entrypaging_left,
+.serendipity_entrypaging_right,
+.serendipity_entrypaging_left .epicon,
+.serendipity_entrypaging_right .epicon { display: inline; }
+
+.serendipity_freeTag {
+    display:block;
+    font-size: 1em;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.serendipity_freeTag a {
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.serendipity_freeTag a:hover { color: #232d30 }
+
+.serendipity_freeTag_related {
+    display:block;
+    font-size: 1em;
+    margin: 5px 0 10px;
+    text-align: left;
+}
+
+.freetag_cloud { padding-top: 20px; }
+
+.archive-title,
+.archive-year { clear: both; }
+
+.archive-year,
+.archive-month,
+.serendipity_entrypaging_left,
+.prev-page { float: left; }
+
+.archive-year { width: 460px; }
+.archive-month { width: 180px; }
+.archive-links { width: 280px; }
+
+.archive-links,
+.serendipity_entrypaging_right,
+.next-page { float: right; }
+
+.serendipity_entrypaging_left,
+.serendipity_entrypaging_right { width: 240px; }
+
+.serendipity_entrypaging_left,
+.prev-page { text-align: left; }
+
+.serendipity_entrypaging_right,
+.next-page { text-align: right; }
+
+.serendipity_pageFooter {
+    float: left;
+    margin: 0 0 20px;
+    padding-right: 30px;
+    width: 450px;
+}
+
+.prev-page, .next-page { width: 225px; }
+
+.serendipity_image_left,
+.serendipity_image_right,
+.serendipity_image_center,
+.serendipity_imageComment_center,
+.serendipity_imageComment_left,
+.serendipity_imageComment_right {
+    border: 1px solid #7ba2ad!important;
+    padding: 0!important;
+}
+
+.serendipity_image_left { margin: 0 10px 10px 0; }
+
+.serendipity_image_right { margin: 0 0 10px 10px; }
+
+.serendipity_image_center {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.serendipity_imageComment_left {
+    display: inline;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.serendipity_imageComment_right {
+    display: inline;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.serendipity_imageComment_center {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.serendipity_imageComment_img img {
+    border: none!important;
+    margin: 0!important;
+}
+
+.serendipity_imageComment_txt {
+    background: #d0e6ec;
+    font-size: .75em;
+    padding: 2px 0;
+    text-align: center;
+}
+
+/* Lightbox plugin fix courtesy of http://metaron.de */
+
+#lightbox { z-index: 10000!important; }
+#overlay { z-index: 9000!important; }

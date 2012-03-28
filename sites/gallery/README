@@ -1,0 +1,53 @@
+ABOUT:
+Gallery 3 is a web based software product that lets you manage
+your photos on your own website.  You must have your own website
+with PHP and database support in order to install and use it.
+With Gallery you can easily create and share albums of photos
+via an intuitive interface.
+
+
+SECURITY (& INTENDED AUDIENCE):
+This is the first technology preview of Gallery 3.0 and as such
+it is not intended to be installed on public websites yet.
+Note:
+ - The application has not undergone a professional security audit
+   yet and may have serious security vulnerabilities.
+ - A series of key features are yet to be added (e.g. a way to
+   reset a forgotten password).
+ - There is no guaranteed upgrade path yet. You might be forced to
+   reinstall Gallery 3 to use the next public release.
+
+The intended audience of this release are enthusiasts, designers
+and module developers. This is the right time to do a test drive
+with the improved user interface and to start developing feature
+extensions and designing new themes.
+Please send your feedback to gallery-devel@lists.sourceforge.net.
+
+
+SUPPORTED CONFIGURATION:
+ - Platform: Linux / Unix.
+ - Web server: Apache 2.2 and newer.
+ - PHP 5.2 and newer (PHP's safe_mode must be disabled).
+ - Database: MySQL 5 and newer.
+
+
+INSTALLATION VIA THE WEB:
+- Point your web browser at gallery3/installer/ and follow the
+  instructions.
+
+
+INSTALLATION FROM THE COMMAND LINE:
+- php installer/index.php [-h host] [-u user] [-p pass] [-d dbname]
+
+ Command line parameters:
+ -h     Database host          (default: localhost)
+ -u     Database user          (default: root)
+ -p     Database user password (default: )
+ -d     Database name          (default: gallery3)
+
+
+Questions, problems:
+  - Check out the gallery3 FAQ http://codex.gallery2.org/Gallery3:FAQ
+  - Email gallery-devel@lists.sourceforge.net
+
+

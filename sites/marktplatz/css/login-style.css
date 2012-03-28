@@ -1,0 +1,113 @@
+#backto {
+display:block;
+background-color:#464646;
+}
+ 
+#backto a {
+left:15px;
+position:absolute;
+text-decoration:none;
+top:7px;
+color:#CCCCCC;
+}
+ 
+#loginbox {
+position:relative;
+height:200px;
+width:320px;
+margin:7em auto;
+}
+ 
+#loginbox form {
+color:#777777;
+border:1px solid #B7DDF2;
+-moz-border-radius:11px;
+-khtml-border-radius:11px;
+background-color:#EBF4FB;
+-webkit-box-shadow:rgb(200, 200, 200) 0 4px 18px;
+-moz-box-shadow:rgb(200, 200, 200) 0 4px 18px;
+padding:16px;
+}
+ 
+#loginbox input[attribut=login] {
+background-color:#F9F9F9;
+border:1px solid #E5E5E5;
+font-size:24px;
+margin-bottom:16px;
+margin-right:6px;
+margin-top:2px;
+width:97%;
+color:#555555;
+padding:3px;
+}
+ 
+#loginbox legend {
+font-family:Union, 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, Sans, FreeSans, Jamrul, Garuda, Kalimati;
+font-size:x-large;
+font-weight:700;
+color:#73818F;
+padding-bottom:10px;
+text-shadow:#E5E5E5 1px 1px 0;
+}
+ 
+#nav {
+padding:10px 10px 10px 0px;
+}
+ 
+* {
+margin:0;
+padding:0;
+}
+ 
+.forgetmenot {
+float:left;
+font-weight:400;
+margin-bottom:0;
+}
+ 
+.login_error {
+background-color:rgb(255, 235, 232);
+border-color:rgb(204, 0, 0);
+}
+ 
+.logoff {
+background-color:rgb(255, 255, 224);
+border-color:rgb(230, 219, 85);
+}
+ 
+.message {
+-moz-border-radius:3px;
+-khtml-border-radius:3px;
+border-style:solid;
+border-width:1px;
+margin:0 0 16px;
+padding:12px;
+}
+ 
+.submit {
+float:right;
+margin:0;
+padding:0;
+}
+ 
+@font-face {
+font-family:Union;
+src:url('../../fonts/union.ttf');
+}
+ 
+body {
+border-top-style:solid;
+border-top-width:30px;
+font:normal normal normal 11px/normal 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+border-top-color:#464646;
+}
+ 
+fieldset {
+border:none;
+}
+ 
+html,body {
+height:100%;
+width:100%;
+background-color:#F9F9F9;
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>zenphoto changelog</title>
+    <style type="text/css">
+      body { 
+        margin: 0px 20% 0px;
+        background-color: #f4f4f8; 
+        font-family: Arial, Helvetica, Verdana, sans-serif;
+        font-size: 10pt;
+      }
+      #main { background-color: #f0f0f4; padding: 30px 20px; }
+      h1 { font-weight: normal; font-size: 24pt; }
+      h1, h2, h3, h4, h5 { padding: 0px; margin: 0px; margin-bottom: .15em; }
+      .entry {
+        padding: 15px;
+        border: 1px solid #dddde2;
+        background-color: #fff;
+        margin-bottom: 20px;
+      }
+      A:link, A:visited { text-decoration: none; color: #36C; }
+      A:hover, A:active { text-decoration: underline; color: #F60; background-color: #FFFCF4; }
+      code { color: #090; }
+      cite { color: #09C; font-style: normal; font-size: 8pt;}
+      .bug, a.bug { color: #D60 !important; font-family: monospace; }
+    </style>
+  </head>
+
+<body>
+<div id="main">
+<h1>zenphoto changelog</h1>
+
+<!-- 
+<div class="entry">
+  <h3>Version 0.0.0</h3>
+  <h4>08/15/2008</h4>
+  <ul>
+    <li></li>
+  </ul>
+</div>
+
+
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href=""></a></li>
+  </ul>
+-->
+
+<div class="entry">
+  <h3>Version 1.2</h3>
+  <h4>08/15/2008</h4>
+	<ul>
+		<li>Move/copy/rename albums and images <cite>[trisweb]</cite></li>
+		<li>Mutli-lingual content support <cite>[sbillard]</cite></li>
+		<li>Separate plugin translation capability <cite>[acrylian, sbillard]</cite></li>
+		<li>Lots of security/vulnerability fixes <cite>[krainbolt]</cite></li>
+		<li>Admin backend improvements <cite>[trisweb, sbillard, acrylian]</cite></li>
+		<li>Slideshow plugin updates: progressive image preloading, slideshow from search and dynamic albums <cite>[dpeterson, sbillard, acrylian]</cite></li>
+		<li>Setup improvements with more checks <cite>[sbillard]</cite></li>
+		<li>Translation updates
+			<ul>
+					<li>Traditional Chinese translation <cite>[fatman]</cite></li>
+					<li>German translation <cite>[acrylian]</cite></li>
+					<li>Dutch translation <cite>[Vincent]</cite></li>
+			</ul>
+		</li>
+		<li>Upload video and audio files via admin backend <cite>[sbillard]</cite></li>
+		<li>Tag management improvements <cite>[sbillard]</cite></li>
+		<li>RSS feeds with language option <cite>[acrylian]</cite></li>
+		<li>Many minor improvements and bugfixes.</li>
+	</ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.1.7</h3>
+  <h4>07/01/2008</h4>
+  <ul>
+    <li>Translation support improved <cite>[sbillard, acrylian, trisweb]</cite>
+        <ul>
+          <li>French translation <cite>[fetard]</cite></li>
+          <li>Dutch translation <cite>[Vincent]</cite></li>
+          <li>Traditional Chinese translation <cite>[fatman]</cite></li>
+          <li>German translation <cite>[acrylian]</cite></li>
+        </ul>
+    </li>
+    <li>Tag Management <cite>[sbillard]</cite></li>
+    <li>Paging for image and comments admin pages <cite>[sbillard]</cite></li>
+    <li>New distributed plugins
+        <ul>
+          <li>dynamic-locale <cite>[sbillard]</cite></li>
+          <li>flv_playlist <cite>[acrylian, sbillard]</cite></li>
+          <li>GoogleCheckout <cite>[mammlouk, sbillard]</cite></li>
+          <li>tag_suggest <cite>[acrylian, sbillard]</cite></li>
+          <li>user_logout <cite>[sbillard]</cite></li>
+        </ul>
+    <li>several bugfixes and improvements</li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.1.6</h3>
+  <h4>05/15/2008</h4>
+  <ul>
+		<li>Localization framework <cite>[acrylian, sbillard, aitf311]</cite></li>
+    <li>German translation <cite>[acrylian]</cite></li>
+    <li>Full image protection improvements <cite>[sbillard]</cite></li>
+    <li>RSS validation and sorting impovements <cite>[acrylian, sbillard]</cite></li>
+    <li>Tag improvements <cite>[sbillard]</cite></li>
+    <li>Album themes <cite>[sbillard]</cite></li>
+    <li>Watermark scaling <cite>[sbillard]</cite></li>
+    <li>Plugin system plus several default plugins <cite>[sbillard, acrylian]</cite></li>
+    <li>Slideshow (plugin) <cite>[acrylian, sbillard and special thanks to djdevine for the IE CSS positioning fix]</cite></li>
+    <li>JS changes from prototype to jQuery for admin backend <cite>[aitf311]</cite></li>
+    <li>Stronger captcha for comments <cite>[sbillard]</cite></li>
+    <li>MP3 and MP4 (video/audio) support <cite>[sbillard, acrylian]</cite></li>
+    <li>Rating IE CSS display fix <cite>[jimhawkins]</cite></li>
+    <li>Setup improvements <cite>[sbillard]</cite></li>
+    <li>Various bugfixes</li>
+    <li>Full list of resolved issues on Trac</li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.1.5</h3>
+  <h4>02/29/2008</h4>
+  <ul>
+    <li>Performance improvements <cite>[trisweb]</cite></li>
+    <li>Security improvements <cite>[sbillard]</cite></li>
+    <li>Boolean expressions for searches <cite>[sbillard]</cite></li>
+    <li>Dynamic Albums <cite>[sbillard]</cite></li>
+    <li>Multiple Admins with varying rights <cite>[sbillard]</cite></li>
+    <li>various bugfixes</li>
+    <li><a href="http://www.zenphoto.org/trac/query?milestone=1.1.5&order=priority">Full list of resolved issues</a> on Trac</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.1.4</h3>
+  <h4>02/01/2008</h4>
+  <ul>
+    <li>Improves system configuration checks in setup.php <cite>[sbillard]</cite></li>
+    <li>Zenphoto function guide <cite>[sbillard, acrylian]</cite></li>
+    <li>Password protection improvements <cite>[sbillard, acrylian]</cite></li>
+    <li>Comments on albums <cite>[sbillard]</cite></li>
+    <li>Admin pages enhancements <cite>[sbillard, acrylian, aitf311]</cite></li>
+    <li>Mod_rewrite rules for TAGS, Search Fields <cite>[sbillard, acrylian]</cite></li>
+    <li>Simple Captcha for comment form validation <cite>[gregb34, sbillard]</cite></li>
+    <li>Site defined custom data fields for images and albums <cite>[sbillard]</cite></li>
+		<li>Fixes for HTML, XSS, and SQL injection vulnerabilities <cite>[trisweb, acrylian, sbillard]</cite></li>
+    <li>Boolean logic on tokens for searches <cite>[sbillard]</cite></li>
+    <li>Option for full image quality <cite>[sbillard]</cite></li>
+    <li>Album rating  <cite>[acrylian]</cite></li>
+    <li><a href="http://www.zenphoto.org/trac/query?milestone=1.1.4&order=priority">Full list of resolved issues</a> on Trac</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.1.3</h3>
+  <h4>12/14/2007</h4>
+  <ul>
+    <li>Integrated setup and upgrade, makes both easier <cite>[sbillard]</cite></li>
+    <li>Setup now performs a system setup, corrects many issues on its own, otherwise lets you know what to fix <cite>[sbillard]</cite></li>
+    <li>Password protection for gallery/albums <cite>[sbillard]</cite></li>
+    <li>Significantly improved admisitration tools <cite>[sbillard]</cite></li>
+    <li>Removed admin pass from zp-config and encrypted it in the DB table <cite>[sbillard]</cite></li>
+    <li>Pre-caching of images <cite>[sbillard]</cite></li>
+    <li>Pre-caching of images <cite>[sbillard]</cite></li>
+    <li>Additional IPTC fields <cite>[sbillard]</cite></li>
+		<li>Image rating along with Image and Album hit counter  <cite>[acrylian]</cite></li>
+    <li>Global album sort including ascending/descending. Album inheritance of these settings <cite>[sbillard]</cite></li>
+    <li><a href="http://www.zenphoto.org/trac/query?milestone=1.1.3&order=priority">Full list of resolved issues</a> on Trac</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.1.2</h3>
+  <h4>11/8/2007</h4>
+  <ul>
+    <li>Fixed significant bug that forced usuers to manually make the options table <cite>[trisweb, sbillard]</cite></li>
+    <li><a href="http://www.zenphoto.org/trac/query?milestone=1.1.2&order=priority">Full list of resolved issues</a> on Trac</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.1.1</h3>
+  <h4>11/65/2007</h4>
+  <ul>
+    <li>Simplified the install process by getting rid of a lot of the fields in zp-config.php <cite>[sbillard]</cite></li>
+    <li>Email your password from the admin login <cite>[sbillard]</cite></li>
+    <li>Ability to sort in ascending or descending <cite>[sbillard]</cite></li>
+    <li><a href="http://www.zenphoto.org/trac/query?milestone=1.1.1&order=priority">Full list of resolved issues</a> on Trac</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.1</h3>
+  <h4>11/2/2007</h4>
+  <ul>
+    <li>Subalbum administration including ordering, deleting, editing, uploading, etc. <a class="bug" href="http://www.zenphoto.org/trac/ticket/6">#6</a> <cite>[sbillard, trisweb]</cite></li>
+    <li>Subalbum paging. <a class="bug" href="http://www.zenphoto.org/trac/ticket/2">#2</a> <cite>[sbillard]</cite></li>
+    <li>RSS feeds for gallery, albums and comments. <a class="bug" href="http://www.zenphoto.org/trac/ticket/7">#7</a> <cite>[WillHamilton, thinkdreams, Alenonimo, acrylian]</cite></li>
+    <li>EXIF display <a class="bug" href="http://www.zenphoto.org/trac/ticket/4">#4</a> <cite>[trisweb]</cite></li>
+    <li>Download complete album as zip using: <code>printAlbumZip()</code> <a class="bug" href="http://www.zenphoto.org/trac/ticket/32">#32</a> <cite>[mankind]</cite></li>
+    <li>Password protected theme (temporary solution); load the theme 'default-pass' <a class="bug" href="http://www.zenphoto.org/trac/ticket/46">#46</a> <cite>[La0c00n]</cite></li>
+    <li>Support for Videos (flv, mov, 3gp): ZenVideo <a class="bug" href="http://www.zenphoto.org/trac/ticket/54">#54</a> <cite>[La0c00n]</cite></li>
+    <li>Geospatial Visualization (Google Maps) using: <code>printAlbumMap()</code> and <code>printImageMap()</code> <a class="bug" href="http://www.zenphoto.org/trac/ticket/54">#54</a> and <a class="bug" href="http://www.zenphoto.org/trac/ticket/78">#78</a> <cite>[mankind]</cite></li>
+    <li>Deleting album with subalbums no longer leaves tracks <a class="bug" href="http://www.zenphoto.org/trac/ticket/75">#75</a> <cite>[sbillard]</cite></li>
+    <li>Subalbums work with all the themes included in this release <cite>[aitf311]</cite></li>
+    <li>Options (zp-config.php entries) moved to web-based admin <cite>[sbillard]</cite></li>
+    <li><code>/zen/</code> folder renamed to <code>/zp-core/</code> because of conflicts; take note!</li>
+    <li>Partial plugin support: theme plugins and zenphoto core plugins (see Spam Filter in admin options) <cite>[sbillard]</cite></li>
+    <li>IPTC support for Title and Caption. <a class="bug" href="http://www.zenphoto.org/trac/ticket/67">#67</a> <cite>[sbillard]</cite></li>
+    <li>Spam Filtering with Askimet and another simple algorithm. <a class="bug" href="http://www.zenphoto.org/trac/ticket/123">#123</a> <cite>[sbillard, thinkdreams]</cite></li>
+    <li>Image and Album searching. <cite>[acrylian, sbillard]</cite></li>
+    <li>Basic Image and Album tag support. <cite>[sbillard, aitf311]</cite></li>
+    <li>Image and Album archives, based on available metadata dates. <cite>[sbillard]</cite></li>
+    <li><a href="http://www.zenphoto.org/trac/query?milestone=1.1&order=priority">Full list of resolved issues</a> on Trac</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.0.8</h3>
+  <h4>3/1/2007</h4>
+  <ul>
+    <li>Faster image loading by using the cached image path directly if the file exists. <cite>[trisweb]</cite></li>
+    <li>Custom suffix for image pages (eg: <code>/alb/img1.jpg</code> &raquo; <code>/alb/img1.jpg.php</code>) Defaults to <code>.php</code>, is backward-compatible with older URLs by 301-redirect, and makes sense. <a class="bug" href="http://www.zenphoto.org/trac/ticket/16">#16</a>  <cite>[trisweb]</cite></li>
+    <li>Now compatible with PHP safe_mode restriction. <cite>[trisweb]</cite></li>
+    <li>Fix for permissions wrongly set in cache folder (could not delete cached images). <cite>[trisweb]</cite></li>
+    <li>Added optional Unsharp Mask for thumbnails, defaults to off. Config param: <code>thumb_sharpen</code>. <cite>[trisweb]</cite></li>
+    <li>Refactored the way requests are handled. Split into 2 include files: <code>controller.php</code> and <code>functions-controller.php</code>. <cite>[trisweb]</cite></li>
+    <li>mod_rewrite rules for sub-albums complete; works to infinite path depth.  <cite>[trisweb]</cite></li>
+    <li>Much improved SEO (Search Engine Optimization) - URLs are always 301-redirected to their single canonical form; <a class="bug" href="http://www.zenphoto.org/trac/ticket/16">#16</a> (custom suffix) fixes image pages not appearing in indexes.  <cite>[trisweb]</cite></li>
+    <li>Major code refactoring and reorganization.  <cite>[trisweb]</cite></li>
+    <li>Warning if you use the <abbr title="That's incredible, I've got the same combination on my luggage!">default password</abbr>. <cite>[Chris S.]</cite> </li>
+    <li>Better filtering of the album folder/image filename to avoid duplicate database entries. <cite>[trisweb]</cite></li>
+    <li>Collected garbage in garbage collection methods. Fixed several bugs. <cite>[trisweb]</cite></li>
+    <li>1.0.8.1 - Fixed a bug with the image suffix as '.php' <cite>[trisweb]</cite></li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.0.7</h3>
+  <h4>1/26/2007</h4>
+  <ul>
+    <li>Large security bug patched; thanks to nicosomb for reporting it. <cite>[trisweb]</cite></li>
+    <li>No other changes.</li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.0.6</h3>
+  <h4>12/11/2006</h4>
+  <ul>
+    <li>Bug: image sorting within albums fixed (getImageId() not found error). <cite>[trisweb]</cite></li>
+    <li>Bug: image dimensions are now cached in the database again (no functional difference, but much faster). <cite>[trisweb]</cite></li>
+    <li>Changed the default RewriteBase in .htaccess to <code>/zenphoto</code> to correspond with the default folder in the package. <cite>[trisweb]</cite></li>
+    <li>Now detects changed images and reprocesses them if the cached versions are old. <cite>[trisweb]</cite></li>
+    <li>When an image cannot be found/loaded, an error image is shown instead of no image (passing <code>i.php?...<strong>&amp;debug</strong></code> disables this and shows the error output) <cite>[trisweb]</cite></li>
+    <li>Other minor bugfixes and code cleanups.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.0.5</h3>
+  <h4>12/8/2006</h4>
+  <ul>
+    <li>1.0.4 was littered with PHP short tags by accident (an SVN reversion somehow happened), now fixed. <cite>[trisweb]</cite></li>
+    <li>No other changes.</li>
+  </ul>
+  
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2006/12/10/zenphoto-105-released/">trisweb.com - Zenphoto 1.0.5 Released</a></li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 1.0.4</h3>
+  <h4>12/8/2006</h4>
+  <ul>
+    <li>Backend performance improvements! Zenphoto is now up to 10 times faster at rendering album and image pages with extremely large albums, and at least three times as fast for moderately-sized ones. <cite>[trisweb]</cite></li>
+    <li>Fixed bug where clicking the album or gallery in the breadcrumb would always go to page 1 <cite>[trisweb]</cite></li>
+    <li>Fixed a bug with database constraint naming conflicts with multiple installations <cite>[trisweb]</cite></li>
+    <li>Added an <code>ini_set</code> to try to adjust PHP's memory limit (may allow for larger images to be processed). <cite>[trisweb]</cite></li>
+    <li>Better and more secure comment input filtering from the kses library. <cite>[Niels Leehneer]</cite></li>
+    <li>Database access code abstracted and refactored. All (most) queries are now generalized through a new database class: PersistentObject. <cite>[trisweb]</cite>
+    <li>Bugfixes in saving of "Place" field - formerly overwrote the title (oops) <cite>[trisweb]</cite></li>
+    <li>Sub-albums half implemented (for TESTING ONLY). Use the Sub-Albums Test Theme to try it out! Admin control and paging yet to be done. <cite>[trisweb]</cite></li>
+    <li>Three new themes included: "Default Dark" and "Sterile" by Levi Buzolic, and "Stoppeddesign" by Ben Spicer.</li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.0.3 beta</h3>
+  <h4>5/31/2006</h4>
+  <ul>
+    <li>Added more image size options to i.php (custom sizes and crops) <cite>[trisweb]</cite></li>
+    <li>Added ability to get image size/orientation from a theme (see documentation) <cite>[trisweb]</cite></li>
+    <li>Width and height attributes now filled in theme images (page loading looks much better) <cite>[trisweb]</cite></li>
+    <li>Changed name of a function that conflicts with WordPress (is_valid_email) <cite>[trisweb]</cite></li>
+    <li>Special characters in file and folder names should now work (with or without mod_rewrite) <cite>[trisweb]</cite></li>
+    <li>Fixed several critical vulnerabilities and security issues. <cite>[trisweb]</cite></li>
+    <li>Support for UTF-8 and any other desired character set added. <cite>[Niels Leehneer]</cite></li>
+    <li>Added way for themes to have custom pages. Use <code>index.php?p=page</code> in your theme for access to <em>/themes/yourtheme/page.php</em> <cite>[trisweb]</cite></li>
+    <li>Many other bugs fixed: <a href="http://www.zenphoto.org:8080/secure/IssueNavigator.jspa?rest=true&&created%3Aprevious=-1w&pid=10000&fixfor=10011&status=5&sorter/field=created&sorter/order=DESC">View All</a></li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.0.2 beta</h3>
+  <h4>4/1/2006</h4>
+  <p>Due to the security enhancements in this release, we <strong>strongly recommend</strong> all users upgrade immediately.</p>
+  <ul>
+    <li>Changed the way images are returned. Should drastically reduce CPU time used (a big issue for Dreamhost users). <cite>[trisweb]</cite></li>
+    <li>Fixed bug with installation paths containing the string 'zen'; refined path resolution more. <cite>[trisweb]</cite></li>
+    <li>Fixed several critical vulnerabilities and security issues. <cite>[trisweb]</cite></li>
+    <li>Minor cosmetic path fix&mdash; <code>/page/1</code> should never be seen now. <cite>[trisweb]</cite></li>
+    <li>Root domain and subdomain installations now work. For mod_rewrite, use <code>RewriteBase /</code> <cite>[trisweb]</cite></li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.0.1 beta</h3>
+  <h4>1/11/06</h4>
+  <ul>
+    <li>Fixed an embarrasing bug in template-functions.php where an empty Gallery would cause failures. <cite>[luckyspin]</cite></li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 1.0.0 beta</h3>
+  <h4>1/10/06</h4>
+  <ul>
+  	<li>Added Album sorting. Default is by filename, but you can drag and drop your preferred order manually. <cite>[luckyspin]</cite></li>
+  	<li>Added [refresh] link to Gallery stats, you can now manually reset your stats and clean up your DB tables. <cite>[trisweb]</cite></li>
+  	<li>Added Gallery sorting. Default is newest first, but you can drag and drop your preferred order. <cite>[luckyspin]</cite></li>
+  	<li>Added deletion of images and albums in admin. <cite>[trisweb]</cite> </li>
+  	<li>Added email notification to the admin user when comments are posted. <cite>[luckyspin]</cite> </li>
+  	<li>Admin: Created admin functions to clean up admin page(s). <cite>[luckyspin]</cite></li>
+  	<li>Admin: Created an upgrade page to migrate db tables to new schema. <cite>[luckyspin]</cite></li>
+  	<li>Admin: Spruced up some of the admin pages to their L&amp;F was consistent. <cite>[luckyspin]</cite></li>
+    <li>Improved path resolution; please report any bugs you run into! <cite>[trisweb]</cite></li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.9.0</h3>
+  <h4>9/27/2005</h4>
+  <ul>
+    <li>Removed web_path and server_path config variables. They are now automatically deduced (and there was much rejoicing).</li>
+    <li>Added theme functions: <code>getPrevImageThumb()</code> and <code>getNextImageThumb()</code> - return the path
+      to the thumbnail of the previous or next image relative to the current image.</li>
+    <li>Fixed bugs with using next_image() (for iterating through all album images) on an image page. You should now
+      be able to use any loop anywhere without affecting the state.</li>
+    <li>[Bug 005102] Images smaller than the standard image size will not be sized <em>up</em> anymore.</li>
+    <li>[Bug 005125] AJAX-editing no longer strips HTML from titles/descriptions.</li>
+    <li>[Bug 005086] Using zenphoto without mod_rewrite should work fine now.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.8.1, 0.8.2</h3>
+  <h4>9/16/2005</h4>
+  <ul>
+    <li>Fixed bugs in setup script causing instructions not to be shown.</li>
+    <li>(Note: 0.8.2 was a fix for a syntax error in 0.8.1 that I hope no one saw)</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.8.0 (Developer Release)</h3>
+  <h4>9/15/2005</h4>
+  <ul>
+    <li>Finalized default theme.</li>
+    <li>Admin: Added ability to choose which image to use for the album thumbnail.</li>
+    <li>More bugfixes.</li>
+  </ul>
+  
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2005/09/15/zenphoto-08-beta-developer-release/">trisweb.com - zenphoto 0.8 developer release</a></li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.6.0</h3>
+  <h4>6/12/2005</h4>
+  <ul>
+    <li>Admin: Checked-in Joen's design.</li>
+    <li>Default Theme: new RC from Joen; for admins, added "edit comment" and "admin" links.</li>
+    <li>Default Theme: gave all thumbnails width/height so floating DIVs line up properly before load.</li>
+    <li>Many small changes and bugfixes.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.5.0</h3>
+  <h4>8/16/2005</h4>
+  <ul>
+    <li>Admin/Themes: New tab "Options" contains the theme switcher.</li>
+    <li>Better comment validation (only allows tags specified in a list in config.php)</li>
+    <li>Themes: Added a 'theme.txt' definition file and parser. Theme metadata is now set.</li>
+    <li>Themes: Added a 'theme.*' image, where * can be either gif, png, or jpg. Images must be 150x150 and should be a screenshot only; no text.</li>
+    <li>Added zen/setup.php - a setup script to make the database tables and give basic instructions.</li>
+    <li>Lots of bugfixes.</li>
+  </ul>
+  
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2005/08/16/zenphoto-05-almost-ready/">trisweb.com - zenphoto 0.5 - "Almost Ready"</a></li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.4.0</h3>
+  <h4>8/12/2005</h4>
+  <ul>
+    <li>Admin section: Added javascript image-enlargement while editing (click the image to enlarge).</li>
+    <li>Implemeted themes. Add themes in new directories in /themes, switch themes with the 'theme' var in config.php</li>
+    <li>Converted 2 current designs to themes ('default' (Joen's theme) and 'testing' (the old testing theme))</li> 
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.3.6</h3>
+  <h4>8/11/2005</h4>
+  <ul>
+    <li>Admin section: All comment functionality (edit/delete/view/respond).</li>
+    <li>Admin section complete except for deletion of images. Possibly leaving for apres-1.0</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.3.5</h3>
+  <h4>7/29/2005</h4>
+  <ul>
+    <li>Admin section: Intuitive Javascript validation of album uploads.</li>
+    <li>Admin section: Delete buttons and actions.</li>
+    <li>(Test Version: Uploads and deletes are disabled for the public.)</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.3.4</h3>
+  <h4>7/28/2005</h4>
+  <ul>
+    <li>Admin section: Upload interface.</li>
+    <li>Admin section: Upload file handling (all image types *plus* ZIP files).</li>
+  </ul>
+</div>
+
+
+<div class="entry">
+  <h3>Version 0.3.3</h3>
+  <h4>7/25/2005</h4>
+  <ul>
+    <li>Admin section - overview page basic layout (10 comments, links, etc)</li>
+    <li>Admin section - mass-edit albums and images complete.</li>
+  </ul>
+</div> 
+
+
+<div class="entry">
+  <h3>Version 0.3.2</h3>
+  <h4>7/23/2005</h4>
+  <ul>
+    <li>Comments error more gracefully; removed saved comment info from the template.</li>
+    <li>Administration section design complete.</li>
+    <li>Login logic, authentication complete (login at /zp/admin/)</li>
+    <li>AJAX in main gallery only works for loggied-in user</li>
+    <li>Added template functions for album date/place</li>
+  </ul>
+</div> 
+
+
+<div class="entry">
+  <h3>Version 0.3.1</h3>
+  <h4>7/7/2005</h4>
+  <ul>
+    <li>Fixed bug with AJAX editing and PHP magic_quotes_gpc</li>
+    <li>Refactored config to use an array and getter function instead of global variables.</li>
+  </ul>
+</div> 
+
+<div class="entry">
+  <h3>Version 0.3</h3>
+  <h4>7/4/2005</h4>
+  <ul>
+    <li>AJAX title/description editing on images and albums.</li>
+    <li>Comment saving</li>
+    <li>Bugfixes; improved IE support.</li>
+  </ul>
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2005/07/04/zenphoto-03-ajax-fireworks/">trisweb.com - zenphoto 0.3 - "AJAX Fireworks"</a></li>
+  </ul>
+</div> 
+
+<div class="entry">
+  <h3>Version 0.2.2</h3>
+  <h4>6/27/2005</h4>
+  <ul>
+    <li>Database garbage collection functions implemented.</li>
+    <li>Temporarily added a "pruning" page to clean the database manually - prune.php<br />
+        (GC will be used later before any operation relying on the database)</li>
+  </ul>
+</div> 
+
+<div class="entry">
+  <h3>Version 0.2.1</h3>
+  <h4>6/25/2005</h4>
+  <ul>
+    <li>Improved comments - website "http://" bug and line breaks.</li>
+  </ul>
+</div> 
+
+<div class="entry">
+  <h3>Version 0.2</h3>
+  <h4>6/24/2005</h4>
+  <ul>
+    <li>Comments, comment template functions added.</li>
+    <li>Lots of bugfixes, speedups, etc.</li>
+  </ul>
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2005/06/24/zenphoto-02-comments-enabled/">trisweb.com - zenphoto 0.2 - "Comments Enabled"</a></li>
+  </ul>
+</div> 
+
+<div class="entry">
+  <h3>Version 0.1.2</h3>
+  <h4>6/20/2005</h4>
+  <ul>
+    <li>Pagination:</li>
+    <li>Template functions to get/print links to next/prev page based on context, and to any page given its number.</li>
+    <li>Improved album/gallery links: now point to the page where the current element resides (eg: the Album 
+      link for an Image page would point to the page of the album that image is on).</li>
+    <li>"Page list" widget (printPageList), prints a UL of links to all pages in the current context, current one has LI.current class.</li>
+  </ul>
+</div> 
+
+<div class="entry">
+  <h3>Version 0.1.1</h3>
+  <h4>6/12/2005</h4>
+  <ul>
+    <li>mod_rewrite rules written (cruft-free URLs)</li>
+    <li>Class functions to save new metadata to the database</li>
+    <li>Lots of small bugfixes</li>
+  </ul>
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2005/06/12/zenphoto-011-cruft-free/">trisweb.com - zenphoto 0.11 - "cruft free"</a></li>
+  </ul>
+</div>
+
+<div class="entry">
+  <h3>Version 0.1 (preview release)</h3>
+  <h4>6/4/2005</h4>
+  <ul>
+    <li><em>Initial Release</em></li>
+    <li>Implemented base structure:
+      <ul>
+        <li>Directory traversals for album lists and image lists.</li>
+        <li>Full image processing and smart caching.</li>
+        <li>Images returned at custom size via URL request.</li>
+        <li>Database schema created; entries are added on detection of new album or image</li>
+        <li>Config file started, most options available</li>
+      </ul>
+    </li>
+    <li>Template functions, and a simple template to test them.</li>
+  </ul>
+  
+  <h4>Relevant links:</h4>
+  <ul>
+    <li><a href="http://www.trisweb.com/archives/2005/06/04/zenphoto-01-preview/">trisweb.com - zenphoto 0.1 preview</a></li>
+    <li><a href="http://www.trisweb.com/archives/2005/05/30/zenphoto-status/">trisweb.com - zenphoto status</a></li>
+    <li><a href="http://www.trisweb.com/archives/2005/05/27/zenphoto-announcement/">trisweb.com - zenphoto announcement</a></li>
+  </ul>
+</div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>ParaNews Readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+a:link {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+color : #00699C;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:active {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color: #006699; 
+text-decoration: none;
+font-weight: bold;
+}
+
+a:visited {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+text-decoration: none; 
+color: #74A0CD;
+font-weight: bold;
+}
+
+a:hover {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+color: #FF8000; 
+text-decoration: underline;
+; font-weight: bold}
+
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+color: #00699C; 
+background-color: #EFEFEF;
+font-weight: bold;
+SCROLLBAR-FACE-COLOR: #b9c1d2;
+SCROLLBAR-SHADOW-COLOR: #8c99b5;
+SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+SCROLLBAR-3DLIGHT-COLOR: #697CAD;
+SCROLLBAR-DARKSHADOW-COLOR: #697CAD;
+SCROLLBAR-TRACK-COLOR: #EFEFEF;
+SCROLLBAR-ARROW-COLOR: #656b70;
+}
+
+.rahmen {
+border: 1px solid #74A0CD;
+}
+
+td {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+background-color: #CADBEC;
+color: #000000;
+}
+
+input { 
+font-family: Verdana, Helvetica; 
+font-size:12;
+color: #000000;
+border:1px #000000 solid; 
+background-color:#FFFFFF; 
+}
+
+textarea { 
+font-family: Verdana, Helvetica; 
+font-size:12;
+color: #000000;
+border:1px #000000 solid; 
+background-color:#FFFFFF; 
+}
+
+select {
+font-family: Verdana, Helvetica; 
+font-size:12
+color: #000000;
+border:1px #000000 solid; 
+background-color:#FFFFFF; 
+}
+.Stil1 {color: #CC0000}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<br><br>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b>ParaNews - ReadMe</b></font></p>
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>1. Installationshinweise f&uuml;r eine Neuinstallation</b></td>
+  </tr>
+  <tr> 
+    <td><br>
+      <ol>
+        <li>Alle Dateien auf den Server laden; Ausnahme: update.php und diese readme.htm.</li>
+        <li>Die Rechte der folgenden Dateien auf 777 stellen (<a href="#Hilfe">Wie 
+          geht das?</a>)<br>
+          <ul>
+            <li> <strong>pn_data.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_categories.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_comments.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_userdata.php</strong> (Ordner paranews/inc)</li>
+            <li><strong>config.inc.php</strong> (Ordner paranews/inc)</li>
+            <li><strong>template.htm</strong> (Ordner paranews)</li>
+            <li><strong>Ordner catpics</strong></li>
+          </ul>
+        </li>
+        <li>Ausgabe aller News unter <strong>http://url-zum-script/index.php</strong></li>
+        <li>Admin-Center aufrufen (in der Ausgabe-Seite auf &quot;<strong>Neue
+            Nachricht</strong>&quot; 
+          klicken) und einloggen mit
+            <ul>
+            <li>Name: <strong>Admin</strong></li>
+            <li>Pass: <strong>admin</strong></li>
+          </ul>
+        </li>
+        <li>Das Standardpasswort im Bereich der Userverwaltung ab&auml;ndern
+           (Sonst haben andere User mit Wissen &uuml;ber dieses Passwort auch
+          Zugriff  auf das Script...)</li>
+        <li>Fertig =)<br>
+        </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+<br>
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>2. Installationshinweise f&uuml;r ein Update von <span class="Stil1">Version
+        3.x (!) </span></b></td>
+  </tr>
+  <tr> 
+    <td><p>&nbsp;</p>
+      <ol>
+        <li>Sichert folgende Dateien:<br>
+          <ul>
+            <li> <strong>pn_data.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_categories.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_comments.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_userdata.php</strong> (Ordner paranews/inc)</li>
+            <li><strong>template.htm</strong> (Ordner paranews)</li>
+            <li><strong>Ordner catpics</strong></li>
+          </ul>
+        </li>
+        <li>Alle Dateien auf den Server laden; Ausnahme: readme.htm </li>
+        <li>Die gesicherten Dateien wieder zur&uuml;ckspielen</li>
+        <li>Die Rechte der folgenden Dateien auf 777 stellen (<a href="#Hilfe">Wie 
+          geht das?</a>)<br>
+          <ul>
+            <li> <strong>pn_data.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_categories.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_comments.dat</strong> (Ordner paranews/inc)</li>
+            <li><strong>pn_userdata.php</strong> (Ordner paranews/inc)</li>
+            <li><strong>config.inc.php</strong> (Ordner paranews/inc)</li>
+            <li><strong>template.htm</strong> (Ordner paranews)</li>
+            <li><strong>Ordner catpics</strong></li>
+          </ul>
+        </li>
+        <li>Im Browser <strong>http://url-zum-script/update.php</strong> aufrufen und den Anweisungen 
+          dort folgen</li>
+        <li>Nach der Installation die <strong>update.php</strong> l&ouml;schen</li>
+        <li>Fertig. Die ParaNews k&ouml;nnen nun wie bisher genutzt werden =)
+		<br>
+        </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+<br />
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>3. Features</b></td>
+  </tr>
+  <tr> 
+    <td><br>
+      <ul>
+        <li>Dateibasiert, d.h. es wird keine Datenbank ben&ouml;tigt</li>
+        <li>vB/UBBCode (z.B. <b>[b]</b>Text<b>[/b]</b> -&gt; <b>Text</b>)</li>
+        <li>Smilies</li>
+        <li>automatischer Datumseintrag</li>
+        <li>automatische Anzeige des Redakteurs</li>
+        <li>Kommentare zu den einzelnen News sind m&ouml;glich</li>
+        <li>einstellbare News-Kategorien inkl. Kategorie-Bilder</li>
+        <li>News k&ouml;nnen aufgeteilt werden, so da&szlig; in der &Uuml;bersicht nur ein kurzer
+          Newstext erscheint</li>
+        <li>Admin-Center:<br>
+          <ul>
+            <li>Vollst&auml;ndige Ver&auml;nderung des Layouts (online) m&ouml;glich</li>
+            <li>Verwaltung der Newsbeitr&auml;ge (Hinzuf&uuml;gen, Ver&auml;ndern, 
+              L&ouml;schen)</li>
+            <li>Verwaltung von Redakteuren (Hinzuf&uuml;gen, &Auml;ndern, L&ouml;schen)</li>
+            <li>Einstellbare Level: &quot;<b>Admin</b>&quot; (alle Optionen verf&uuml;gbar)/&quot;<b>User</b>&quot; 
+              (nur Verwaltung der News m&ouml;glich)</li>
+            <li>Smilies an-/ausschaltbar</li>
+            <li>Beschriftungen der Navigations-Links k&ouml;nnen frei definiert 
+              werden</li>
+          </ul>
+        </li>
+      </ul>
+	  <br></td>
+  </tr>
+</table>
+<br>
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>3. Die Template-Datei</b></td>
+  </tr>
+  <tr> 
+    <td><br>
+      <p>Das Template-System der ParaNews erlaubt es, durch Bearbeiten einer
+        normalen HTML-Datei  das Design an eure Site anzupassen. &Ouml;ffnet
+        die Datei template.htm und &auml;ndert sie einfach nach Belieben ab =)
+        Eine Erkl&auml;rung der Funktionsweise der Template-Datei findet ihr im Admin-Center
+        im Punkt &quot;Ausgabe&quot;. Dort k&ouml;nnt ihr euch auch den Code der Template-Datei
+        anschauen und ver&auml;ndern. Ein Upload entf&auml;llt 
+        somit vollkommen.<br>
+        <br>
+      </p>
+    </td>
+  </tr>
+</table>
+<br>
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>4. Rechtliche Hinweise</b></td>
+  </tr>
+  <tr> 
+    <td>      <p><br>
+        Das Script <strong>darf</strong> ver&auml;ndert werden.<br>
+        Das Script <strong>darf</strong> im <strong>unver&auml;nderten</strong> Zustand weitergegeben werden.<br>
+        Das Script ist f&uuml;r nicht-kommerzielle Nutzung Freeware. Wer es kommerziell
+         einsetzen m&ouml;chte, m&ouml;ge sich per eMail bei mir melden, um n&auml;heres
+          zu erfahren.<br>
+          <br>
+          <br>
+          <strong>Zum Copyright-Verweis</strong>:<br>
+          <br>
+          Der Copyright-Hinweis <strong>muss</strong> bestehen bleiben. Das &Auml;ndern
+          oder Entfernen  ohne vorherige Absprache mit
+          mir ist nicht gestattet! <br>
+          <br>
+          <strong>Wer trotzdem gern den Link entfernt haben
+          m&ouml;chte, m&ouml;ge sich <span class="Stil1">per eMail</span> bei mir melden (z.B. kann
+          der Link ja auch im Impressum eurer Site o.&auml;. erscheinen...).</strong> Ist
+          eure Seite kommerzieller Natur, geht das nat&uuml;rlich nicht. Wenn ihr
+          dort den Copyright-Verweis entfernt haben m&ouml;chtet, so m&uuml;sst ihr das
+          Script gegen ein geringes Entgelt lizenzieren.<br>
+          <br>
+          <br>
+          <b>Disclaimer:</b><br>
+Ich &uuml;bernehme keinerlei Haftung f&uuml;r eventuell auftretende Sch&auml;den,
+die durch die Benutzung dieses Scripts entstehen. <br>
+Jegliche Benutzung geschieht
+auf eigene Gefahr!          <br>
+          <br>
+    </p>
+    </td>
+  </tr>
+</table>
+<br>
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>5. Frequently Asked Questions</b></td>
+  </tr>
+  <tr> 
+    <td>      <p><br>
+        <b>1. <a name="Hilfe"></a> Wie stelle ich die Rechte einer Datei ein ?<br>
+        <br>
+        </b>Falls der Installer die Rechte der zwei erforderlichen Dateien nicht
+         selbst&auml;ndig &auml;ndern kann, so ist es n&ouml;tig, da&szlig; ihr
+          dies selber macht. &Ouml;ffnet dazu euer FTP-Programm (z.B. WS_FTP,
+          CuteFTP,  SmartFTP). Stellt eine Verbindung zu eurem Hoster her und
+          ladet die Dateien 
+        hoch (wie das geht, schreibe ich nun nicht noch extra). Danach klickt
+           ihr die betreffende Datei, die nun auf dem Hoster liegt, mit der rechten
+          
+        Maustaste an. Ein Kontextmen&uuml; d&uuml;rfte erscheinen, worin ihr
+        u.a.  auch einen Men&uuml;punkt 'Permissions', 'CHMOD', 'Zugriffsrechte' o.&auml;.
+         findet, den ihr anklickt. Die Bezeichnung hierf&uuml;r weicht leider von Programm zu Programm ab - im Notfall ist also etwas Suchen angesagt. Es d&uuml;rfte dann ein Fenster erscheinen,
+          in  dem man entweder Zahlen eingeben kann. Dann tragt ihr 777 ein.
+          Oder aber 
+        es kommt eine Art Tabelle, bei der ihr 9 Checkboxen aktivieren k&ouml;nnt.
+        Diese aktiviert ihr dann auch alle und klickt auf OK. Fertig =)</p>
+      <p><b>2. Wie f&uuml;ge ich die ParaNews in meine Site ein?</b></p>
+      <p>Am besten, ihr bearbeitet einfach die template.htm und passt sie euren 
+        W&uuml;nschen gem&auml;&szlig; an.</p>
+      <p>Wer es etwas komplizierter mag, kann auch die index.php includen (ich
+         setze hier einmal Basiswissen von PHP voraus...). Wichtig ist dann aber,
+        
+        da&szlig; euer include so ausschaut: include 'index.php';</p>
+      <p><strong>FALSCH w&auml;re: </strong>include 'ordner/ordner/index.php';</p>
+      <p>Die index.php muss also im gleichen Ordner liegen wie die Datei, in der 
+        sie inkludiert werden soll. Auch die &uuml;brigen zu den ParaNews geh&ouml;renden 
+        Dateien d&uuml;rfen in ihrer Dateistruktur nicht verwendet werden, d.h. 
+        die Position der einzelnen Unterordner zur index.php darf nicht ver&auml;ndert 
+        werden.</p>
+      <p><b>3. Kann ich die index.php im Ordner /paranews umbenennen?</b></p>
+      <p>Ja, das ist problemlos m&ouml;glich. Anschlie&szlig;end solltet ihr aber in das
+        AdminCP gehen und bei den Einstellungen den neuen Dateinamen angeben
+        (dritte Frage von unten).<br>
+        <br>
+        <br>
+      </p>
+    </td>
+  </tr>
+</table>
+<br>
+<table width="80%" border="0" align="center" cellpadding="2" cellspacing="1" class="rahmen">
+  <tr> 
+    <td><b>6. Contact &amp; letzte Worte</b></td>
+  </tr>
+  <tr> 
+    <td><br>
+        Noch Fragen? Dann besucht doch das Board bei 
+        <a href="http://labstation.de/forum">LabStation[.de]</a>! Dort habe ich ein Unterforum
+        extra f&uuml;r die ParaNews eingerichtet, in welchem ihr Fragen stellen k&ouml;nnt und somit
+         den anderen Usern, die dieselbe Frage haben, an den Antworten teilhaben lassen k&ouml;nnt!<br>
+        <br>                
+        Oder ihr mailt an <a href="mailto:scripts@s0nic.de">scripts@s0nic.de</a><br>
+        <b>WICHTIG:</b> Ihr <b>m&uuml;sst</b> im Betreff das Wort "ParaNews" schreiben, denn 
+        sonst wird die E-Mail automatisch als Spam behandelt und gel&ouml;scht!! 
+		<br><br>
+        Viel Spa&szlig; :)
+		<br><br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,120 @@
+	CHANGELOG FOR PARANEWS
+	======================
+
+
+----------------------
+-     2004-04-25     -
+----------------------
+v3.3a
+
+CHG: Neue User haben nun die richtige ID
+CHG: patch.php umbenannt zu update.php
+
+
+
+
+----------------------
+-     2004-01-07     -
+----------------------
+v3.3
+
+CHG: Kategoriensystem überarbeitet
+CHG: Kommentarformular: In das Namens- oder eMailfeld eingetragener Code wird nun nicht mehr ausgeführt
+CHG: Speicherung der Accountdaten verändert
+
+
+
+----------------------
+-     2003-07-03     -
+----------------------
+v3.2
+
+NEU: Dateiname der News-Ausgabeseite einstellbar
+NEU: Parameter-Übergabe aus Siteengines an die ParaNews möglich
+NEU: Seite einstellbar,die nach dem Logout aufgerufen wird
+CHG: Admin->Settings->Bilder-/Text-Anzeige->Select-Feld von Ja/Nein auf Bilder/Text geändert
+CHG: Variablenname 'go' geändert auf 'pn_go', um Konflikte mit Site-Engines zu minimieren
+CHG: Neue Beispiel-Kategorie-Pics ;)
+
+
+----------------------
+-     2003-06-20     -
+----------------------
+v3.1
+
+CHG: Bug beseitigt ('ReadMore'-Link taucht auf, wenn vorherige News diesen Link auch hat) 
+
+----------------------
+-     2003-06-01     -
+----------------------
+v3.0
+
+NEU: Kommentarsystem
+NEU: Kategorie-System
+CHG: Verbesserte Template-Datei
+CHG: Editor zum Schreiben von News verbessert
+CHG: Verbessertes Handling von Vorschau-Newstexten/kompletten News
+CHG: Erklärung zum Template-System
+CHG: HTML in Texten an-/ausschaltbar
+CHG: HTML in Kommentaren an-/ausschaltbar
+CHG: Konfiguration zur Datums-Anzeige optimiert
+
+
+----------------------
+-     2003-04-11     -
+----------------------
+v2.1
+
+CHG: ParaNews kompatibel zu register_globals=off
+
+
+----------------------
+-     2002-06-10     -
+----------------------
+v2.0
+
+NEU: Template-System
+NEU: Anzeige des Redakteurs
+NEU: Admin-ControlPanel
+NEU: Assistenten für VBB-Code
+NEU: System zur bequemen Userverwaltung
+NEU: "Read More"-Link für kompletten Newstext
+NEU: Layoutänderung online möglich
+NEU: Änderung an Scripteinstellungen per Browser
+CHG: Login-System nun mit Sessions
+
+
+----------------------
+-     2002-01-26     -
+----------------------
+v1.5
+
+NEU: Login-System für mehr als 10 Benutzer
+CHG: kleinere Bugfixes
+
+
+----------------------
+-     2001-012-31     -
+----------------------
+v1.0a
+
+CHG: 2 kleine Bugs behoben
+
+
+----------------------
+-     2001-12-24     -
+----------------------
+v1.0
+
+CHG: Verbessertes Loginsystem
+CHG: Trennzeichen in der DB ausgetauscht
+CHG: Viele kleine Bugfixes
+CHG: Unterstützung von vBB-Code verbessert
+
+
+----------------------
+-     2001-11-08     -
+----------------------
+v0.9 Beta
+
+Die ParaNews sind geboren :)

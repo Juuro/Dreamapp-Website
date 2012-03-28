@@ -1,0 +1,403 @@
+@charset utf-8;
+
+#adminmenu {
+float:left;
+list-style:none;
+position:relative;
+width:145px;
+padding:0;
+}
+
+#adminmenu * {
+list-style:none;
+border-color:#e3e3e3;
+}
+
+#adminmenu .active-submenu .menu-toggle {
+background-position-y:-207px;
+}
+
+#adminmenu .active-submenu .submenu {
+border-color:#aaa!important;
+}
+
+#adminmenu .active-submenu .submenu li a {
+background-color:transparent;
+color:#798BB2;
+border-color:#aaa!important;
+}
+
+#adminmenu .active-submenu .submenu li.current a {
+background-image:none;
+color:#333;
+text-shadow:#fff 0 1px 0;
+font-weight:700;
+background:url(../img/menu-dark.gif) no-repeat #f5f5f5!important;
+border-color:#e3e3e3;
+border-width:0 1px 0 0;
+}
+
+#adminmenu .active-submenu .submenu ul {
+border-bottom-color:#aaa;
+}
+
+#adminmenu .inactive-submenu .menu-toggle {
+background-position-y:-109px;
+}
+
+#adminmenu .inactive-submenu .submenu {
+border-color:#e3e3e3!important;
+}
+
+#adminmenu .inactive-submenu .submenu li a {
+background-color:#FFF;
+color:#798BB2;
+border-color:#e3e3e3;
+}
+
+#adminmenu .inactive-submenu .submenu ul {
+border-color:#e3e3e3;
+}
+
+#adminmenu .menu-image {
+background:url(../img/menu.png) no-repeat scroll transparent;
+float:left;
+height:24px;
+width:28px;
+background-position-x:-61px;
+background-position-y:-33px;
+}
+
+#adminmenu .menu-toggle {
+background:url(../img/menu-bits.gif) no-repeat scroll transparent;
+background-position-x:0;
+cursor:default;
+float:right;
+height:27px;
+width:22px;
+margin:1px 0 0;
+padding:1px 2px 0 0;
+}
+
+#adminmenu .menu-top {
+margin-bottom:5px;
+}
+
+#adminmenu .menu-top .active-submenu {
+background:url(../img/menu-bits.gif) repeat-x #6d6d6d;
+color:#FFF;
+text-shadow:rgba(0,0,0,0.398438) 0 -1px 0;
+border-width:1px;
+}
+
+#adminmenu .menu-top .has-no-submenu {
+background: #f1f1f1;
+color:#798BB2;
+font:normal normal normal 13px/18px Union, Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+line-height:1;
+min-width:10px;
+border-style:solid;
+border-width:1px;
+padding:5px;
+}
+
+#adminmenu .menu-top .has-no-submenu.active-submenu {
+background: #737373;
+color:#FFF;
+text-shadow:rgba(0,0,0,0.398438) 0 -1px 0;
+border-color:#aaa;
+border-width:1px;
+}
+
+#adminmenu .menu-top .has-submenu {
+font:normal normal normal 13px/18px Union, Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+line-height:1;
+min-width:10px;
+padding:5px;
+}
+
+#adminmenu .menu-top .has-submenu.inactive-submenu {
+background: #f1f1f1;
+color:#798BB2;
+border-style:solid solid none;
+border-width:1px 1px 0;
+}
+
+#adminmenu .menu-top .inactive-submenu:hover {
+color:#FA2B31;
+}
+
+#adminmenu .pref {
+margin-top:50px;
+}
+
+#adminmenu .submenu {
+display:blockx;
+background-color:transparent;
+list-style:none;
+position:relative;
+z-index:2;
+border-style:solid none none;
+border-width:1px 0 0;
+margin:0;
+padding:0;
+}
+
+#adminmenu .submenu a {
+padding-left:12px;
+font:normal normal normal 11px/18px 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+border-style:none solid none none;
+border-width:0 1px 0 0;
+margin:0;
+}
+
+#adminmenu .submenu li a {
+background-image:none;
+text-shadow:#fff 0 1px 0;
+padding-left:12px;
+border-style:none solid;
+border-width:0 1px;
+margin:0;
+}
+
+#adminmenu .submenu li a:hover {
+background-color:#eaf2fa!important;
+}
+
+#adminmenu .submenu ul {
+background-color:#FFF;
+font-size:12px;
+border-style:none none solid;
+border-width:0 0 1px;
+}
+
+#adminmenu a {
+display:block;
+line-height:1;
+text-decoration:none;
+padding:1px 5px 3px;
+}
+
+#adminmenu li {
+cursor:pointer;
+margin:0;
+padding:0;
+}
+
+#backto a {
+color:#ccc;
+left:15px;
+position:absolute;
+text-decoration:none;
+top:7px;
+}
+
+#control {
+right:15px;
+position:absolute;
+text-decoration:none;
+top:7px;
+color:#CCC;
+}
+
+#page-wrap {
+margin-left: 155px;
+clear:both;
+}
+
+#control a {
+text-decoration:none;
+color:#CCC;
+}
+
+footer, #footer {
+width:100%;
+float:left;
+text-align:center;
+}
+
+article, #main {
+width: 100%;
+float: left;
+}
+
+* {
+margin:0;
+padding:0;
+}
+
+.bad {
+border-radius:3px;
+background-color:#ffebe8;
+border-color:#c00;
+}
+
+section, .content {
+width:100%;
+display: block;
+-khtml-border-radius:3px;
+-moz-border-radius:3px;
+background: #C5C5C5;
+margin-bottom: 20px;
+}
+
+.good {
+background-color:#ebffe8;
+border-color:#0c0;
+}
+
+.message {
+-khtml-box-shadow:0 0 200px #262626, 1px 1px 1px #989898, -1px -1px 1px #989898;
+-moz-box-shadow:0 0 100px #262626;
+width:300px;
+-moz-border-radius:3px;
+-khtml-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+position:absolute;
+top:150px;
+z-index:5;
+border-style:solid;
+border-width:1px;
+margin:0 auto 20px 100px;
+padding:12px 20px;
+}
+
+.username {
+font-weight:700;
+color:#fff;
+}
+
+.inside-main {
+margin:15px;
+}
+
+aside, #aside {
+clear: left;
+float: left;
+list-style: none;
+margin-bottom: 15px;
+margin-left: -145px;
+margin-top: 15px;
+padding: 0px;
+position: relative;
+width: 145px;
+}
+
+body {
+border-top-style:solid;
+border-top-width:30px;
+font:normal normal normal 11px/normal 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+border-top-color:#464646;
+}
+
+form {
+width:100%;
+}
+
+form p {
+float:left;
+width:100%;
+}
+
+h1 {
+font-family: Union, 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, Sans, FreeSans, Jamrul, Garuda, Kalimati;
+margin-left: 5px;
+margin-bottom: 10px;
+font-size: 30px;
+text-shadow:#c5c5c5 0 1px 0;
+/* color: #3B4655; */
+color: #464646;
+
+}
+
+h3 {
+color: #C60C30;
+}
+
+html,body {
+background: url(../img/bg.png);
+font-family:Tahoma, Geneva, sans-serif;
+}
+
+img {
+border:none;
+}
+
+header {
+height: 20px;
+}
+
+table.list {
+width: 100%;
+-khtml-border-radius:3px;
+-moz-border-radius:3px;
+margin-bottom: 20px;
+border-spacing: 0;
+border: solid 1px #c5c5c5;
+background:  #F9F9F9;
+}
+
+table.list th {
+background-color:  #ebebeb;
+background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c5c5c5), color-stop(1, #DFDFDF));
+color:#333333;
+text-shadow: #FFFFFF 0 1px 0;
+padding: 7px;
+}
+
+table.list .alternate {
+background-color: #FFFFFF;
+}
+
+table.list td {
+border-bottom: solid 1px #c5c5c5;
+padding: 7px;
+}
+
+table.list .checkbox {
+text-align: center;
+}
+
+table.list .category, table.list .tags, table.list .duration, table.list .price {
+width:10%;
+text-align: center;
+}
+
+table.list .article img {
+float:left;
+margin-right: 10px;
+}
+
+table.list .article .actions {
+margin-top: 10px;
+}
+
+table.list .article .actions a {
+-webkit-border-bottom-left-radius: 5px 5px;
+-webkit-border-bottom-right-radius: 5px 5px;
+-webkit-border-top-left-radius: 5px 5px;
+-webkit-border-top-right-radius: 5px 5px;
+background-color: rgb(59, 70, 85);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 94%, from(rgba(255, 255, 255, 0.199219)), to(rgba(255, 255, 255, 0)));
+border-bottom: thin solid rgb(34, 34, 34);
+border-top: thin solid rgb(115, 116, 116);
+color: rgb(244, 244, 244);
+padding: 1px 3px;
+text-shadow: rgb(34, 34, 34) 0px -1px 0px;
+text-decoration: none;
+-webkit-transition: all 0.2s linear;
+}
+
+table.list .article .actions a:hover {
+background-color: rgb(119, 140, 170);
+color: black;
+font-style: normal;
+font-weight: normal;
+text-shadow: rgb(190, 190, 190) 0px 1px 1px;
+}
+
+@font-face {
+font-family:Union;
+src:url(../../fonts/union.ttf);
+}

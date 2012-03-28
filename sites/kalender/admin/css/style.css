@@ -1,0 +1,123 @@
+#admin-datelist {
+-webkit-box-shadow:rgb(200, 200, 200) 0 4px 18px;
+}
+
+#backto a {
+left:15px;
+position:absolute;
+text-decoration:none;
+top:7px;
+color:#CCCCCC;
+}
+
+#footer {
+text-align:center;
+}
+
+#logoff {
+right:15px;
+position:absolute;
+text-decoration:none;
+top:7px;
+color:#CCCCCC;
+}
+
+#logoff a {
+color:#CCCCCC;
+text-decoration:none;
+}
+
+#wrapper {
+position:relative;
+width:800px;
+margin:1em auto;
+}
+
+*,form.submit {
+margin:0;
+padding:0;
+}
+
+.markedbg {
+background-color:#eeeeee;
+}
+
+.newbooking {
+position:relative;
+}
+
+.newbooking img {
+position:relative;
+top:4px;
+border:none;
+}
+
+@font-face {
+font-family:Union;
+src:url('../../fonts/union.ttf');
+}
+
+a {
+color:#555555;
+text-decoration:none;
+}
+
+a:hover,#stylized a:hover,#div_zurueck a:hover,#div_vor a:hover {
+color:#bbbbbb;
+text-decoration:none;
+}
+
+body {
+border-top-style:solid;
+border-top-width:30px;
+font:normal normal normal 11px/normal 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+border-top-color:#464646;
+}
+
+fieldset {
+border:none;
+}
+
+h1 {
+font-family:Union, 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, Sans, FreeSans, Jamrul, Garuda, Kalimati;
+font-size:x-large;
+font-weight:700;
+color:#73818F;
+padding-bottom:10px;
+text-shadow:#E5E5E5 1px 1px 0;
+}
+
+html,body {
+height:100%;
+width:100%;
+background-color:#F9F9F9;
+}
+
+table {
+margin:10px 0;
+}
+
+table,tr,td,th {
+border:1px solid #aaaaaa;
+border-collapse:collapse;
+padding:2px;
+}
+
+td.active {
+background-color:#b0d870;
+text-align:center;
+}
+
+td.inactive {
+background-color:#f89798;
+text-align:center;
+vertical-align:middle;
+}
+
+th {
+background-color:#cccccc;
+}
+
+tr {
+vertical-align:middle;
+}

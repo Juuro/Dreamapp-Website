@@ -1,0 +1,226 @@
+/**
+ * Gallery 3 Default Admin Theme Screen Styles
+ *
+ * Extends themes/default/css/screen.css
+ *
+ * 1)  Basic HTML elements
+ * 2) Reusable content blocks
+ * 3) Page layout containers
+ * 4) Content blocks in specific layout containers
+ * 5) Browser hacks
+ * 6) jQuery and jQuery UI
+ */
+
+/** *******************************************************************
+ * 1) Basic HTML elements
+ **********************************************************************/
+
+th,
+td {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-right: .5em;
+}
+
+
+/** *******************************************************************
+ * 2) Reusable content blocks
+ **********************************************************************/
+
+.gBlock {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.gBlockContent {
+  padding: 0 1em 1em 1em;
+}
+
+.gSelected img,
+.gAvailable .gBlock img {
+  float: left;
+  margin-right: 1em;
+}
+
+.gSelected {
+  background: #e8e8e8;
+}
+
+.gAvailable .gBlock {
+  cursor: pointer;
+}
+
+.gAvailable .gBlock:hover {
+  background: #eee;
+}
+
+.gUnavailable {
+  border-color: #999;
+  opacity: 0.4;
+}
+
+.gUnavailable:hover {
+  border-color: #ccc;
+  opacity: 1;
+}
+
+.gOddRow {
+  background-color: #eee;
+}
+
+.gEvenRow {
+  background-color: #fff;
+}
+
+/** *******************************************************************
+ * 3) Page layout containers
+ **********************************************************************/
+
+.gView {
+	min-width: 974px !important;
+}
+
+#gHeader {
+	background-color: #e8e8e8;
+	border-bottom: 1px solid #ccc;
+	margin-top: 0;
+	padding: 0 20px;
+}
+
+#gContent {
+  font-size: 1.1em;
+  width: 96%;
+}
+
+/** *******************************************************************
+ * 4) Content blocks in specific layout containers
+ *********************************************************************/
+
+#gHeader #gLogo {
+  float: left;
+  margin: -22px 10px 0 0;
+}
+
+#gHeader #gLoginMenu {
+  float: none;
+  margin: 0;
+  padding: 5px 0 10px 0;
+}
+
+#gHeader #gLoginMenu {
+  text-align: right;
+}
+
+#gHeader #gSiteAdminMenu {
+  float: left;
+  font-size: 1.2em;
+}
+
+#gHeader #gSiteAdminMenu ul {
+  margin-bottom: 0;
+}
+
+.gBlock .ui-dialog-titlebar {
+  margin: -1em -1em 0;
+}
+
+#gSidebar .gBlock h2 {
+  background: none;
+}
+
+#gPhotoStream .gBlockContent {
+  overflow: auto;
+}
+
+#gSiteStatus {
+	margin-bottom: 0;
+}
+
+#gAdminGraphics .gAvailable .gBlock {
+  clear: none;
+  float: left;
+  height: 200px;
+  margin-right: 1em;
+  width: 30%;
+}
+
+#gSiteTheme,
+#gAdminTheme {
+  float: left;
+  width: 48%;
+}
+
+#gSiteTheme {
+  margin-right: 1em;
+}
+
+.gButtonLink {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ececec #c8c8c8 #c8c8c8 #ececec;
+  background-image: url('../images/backg-buttonlink.png');
+  padding: .2em .3em;
+  font-weight: bold;
+}
+
+.gButtonLink:hover {
+  border-color: #c8c8c8 #ececec #ececec #c8c8c8;
+}
+
+#gUserAdminList {
+  margin-bottom: 1em;
+}
+
+.gActions a,
+.gActions span {
+  margin-right: 3em;
+}
+
+li.gGroup {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  padding: .5em;
+  margin-right: 1em;
+}
+
+/** *******************************************************************
+ * 5) Browser hacks
+ *********************************************************************/
+
+#gHeader:after,
+#gAdminCommentsMenu:after,
+#gGroupAdmin:after,
+.gSelected:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/** *******************************************************************
+ * 6) jQuery and jQuery UI
+ *********************************************************************/
+
+#gPanel {
+  display: none;
+  padding: 1em;
+}
+
+#gPanel legend {
+  display: none;
+}
+
+#gPanel fieldset {
+  border: none;
+}
+
+.ui-draggable,
+.ui-sortable {
+  cursor: move;
+}

@@ -1,0 +1,115 @@
+#root { 
+    float: left;
+	width: 1000px;
+}
+#banner {
+    float: left;
+	width: 1000px;
+    height: 92px;
+    background: url(grfx/head/h001.jpg) #171717;
+}
+#links {
+    float: left;
+    width: 200px;
+    background: #171717;
+}
+#mitte {
+    float: left;
+    width: 600px;
+    background: #171717;
+}
+
+#rechts {
+    float: left;
+    width: 200px;
+    background: #171717;
+}
+
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+color: #FFFFFF; 
+background-color: #000000;
+
+SCROLLBAR-FACE-COLOR: #b9c1d2;
+SCROLLBAR-SHADOW-COLOR: #8c99b5;
+SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+SCROLLBAR-3DLIGHT-COLOR: #697CAD;
+SCROLLBAR-DARKSHADOW-COLOR: #697CAD;
+SCROLLBAR-TRACK-COLOR: #efefef;
+SCROLLBAR-ARROW-COLOR: #656b70;
+}
+
+}
+
+td {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+background-color: #171717;
+border-width: 1pt;
+border-color: #000000;
+}
+
+input { 
+font-family: Verdana, Helvetica; 
+font-size: 12px;
+
+color: #000000;
+border: 1px #000000 solid; 
+background-color: #FFFFFF; 
+}
+
+textarea { 
+font-family: Verdana, Helvetica; 
+font-size: 12px;
+color: #000000;
+border: 1px #000000 solid; 
+background-color: #FFFFFF; 
+}
+
+select {
+font-family: Verdana, Helvetica; 
+font-size: 12px;
+color: #000000;
+border: 1px #000000 solid; 
+background-color: #000000; 
+}
+
+
+table {
+border-collapse: collapse;
+margin: 1cm 1cm 1cm 1cm;
+border-width: 1pt;
+border-color: #000000;
+background-color: #171717;
+}
+
+
+li {
+    list-style-image:url(grfx/bunny_kl.jpg);
+}
+
+a {
+	color : #FF0000;
+	text-decoration: none;
+}
+a:hover		{
+	text-decoration: overline;
+	color: #2093E8;
+}
+
+h1 {
+font-size: 22px;
+}
+
+h2 {
+font-size: 20px;
+}
+
+h3 {
+font-size: 18px;
+}
+
+h4 {
+font-size: 16px;
+}

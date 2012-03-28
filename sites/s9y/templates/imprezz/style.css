@@ -1,0 +1,686 @@
+/*
+
+    Theme Name: IMPREZZ
+
+    Theme URI: http://www.productivedreams.com/
+
+    Description: IMPREZZ is a wordpress theme by <a href="http://www.productivedreams.com">ProductiveDreams</a>
+
+    Version: 1.0
+
+    Author: Gopal Raju
+	
+	Twitter: http://twitter.com/gopalraju
+
+    Author URI: http://www.productivedreams.com/
+	
+	Tags: custom header, fixed width, two columns, widgets
+
+*/
+
+
+
+/* CSS Reset
+--------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 16px;
+	color: #232d30;
+	line-height: 24px;
+	
+}
+body {
+	line-height: 1;
+	background: #171b1c url({TEMPLATE_PATH}img/bodybg.jpg) no-repeat fixed center 100px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr{
+display: none;
+}
+
+/* Layout
+--------------------------------------------------------------- */
+
+.primarynav{
+height: 40px;
+width:1004px;
+margin: 0 auto;
+position: relative; 
+top: 50px;
+z-index: 9999;
+height: 30px;
+}
+
+.primarynav *{
+
+list-style: none;}
+
+.primarynav li.current_page_item a, .primarynav li a.current_page_item {
+color: #FFF;
+}
+
+.primarynav li.pagenav{
+overflow:hidden;
+width:545px;
+}
+
+.primarynav ul{
+top:22px;
+left: 0;
+list-style: none;
+}
+
+.primarynav ul li{
+float: left;
+list-style: none;
+}
+
+.primarynav a{
+font-size: 24px;
+font-family: Helvetica, Arial, Verdana;
+text-transform:lowercase;
+color: #3f514a;
+padding-right: 25px;
+letter-spacing: -1px;
+text-decoration: none;
+}
+
+.primarynav a:hover{
+color: #77959b;
+}
+
+.primarynav a.topnav_rss{
+background:transparent url({TEMPLATE_PATH}img/rss.jpg) repeat scroll 0 0;
+color:#FFFFFF;
+padding:0 10px 0 30px;
+position:absolute;
+right:0;
+top:0;
+}
+
+.primarynav h2{
+display: none;
+}
+
+#sidebar{
+width:285px;
+float: left;
+background: transparent url({TEMPLATE_PATH}img/sidebarbg.gif) repeat-y center top;
+_margin-left:-18px;
+}
+
+#sidebar a:hover{
+color: #FFF;
+}
+
+
+#sidebar h1.logo{
+width: 250px;
+padding: 0px;
+margin: 0px auto;
+}
+
+#sidebar h1.logo a{
+background: url({TEMPLATE_PATH}img/logo.gif) no-repeat center top;
+width: 250px;
+height: 120px;
+display: block;
+overflow: hidden;
+text-indent: -999px;
+border-top:6px solid #111f22;
+}
+
+input#submit{
+border:1px solid #7BA2AD;
+padding: 10px;
+font-family: Helvetica, Arial, Verdana;
+background: #242f31;
+text-transform: uppercase;
+color: #FFF;
+cursor: pointer;
+font-size: 14px;
+}
+
+#commentform input#submit{
+float: right;
+
+}
+
+#sidebar h2{
+padding: 10px 10px 20px 10px;
+background: url({TEMPLATE_PATH}img/heads.jpg) no-repeat center;
+font-family: Helvetica, Arial, Verdana;
+font-size: 18px;
+color: #FFF;
+font-weight: bold;
+letter-spacing: -1px;
+text-transform: uppercase;
+}
+
+.narrowcolumn textarea{
+border:2px solid #7BA2AD;
+width:93%;width:415px;
+font-family: Arial, Helvetica, Verdana;
+font-size: 16px;
+padding: 5px;
+_width:405px;
+}
+
+
+
+.narrowcolumn h2.pagetitle{
+margin-top: 30px;
+text-transform: uppercase;
+_margin-top:70px;
+}
+
+.narrowcolumn #commentform label{
+display: block;
+float: left;
+text-align: right !important;
+width:130px;
+}
+
+.narrowcolumn #commentform{
+margin: 0px auto;
+_margin-left:20px;
+overflow: hidden;
+height: 1%;
+}
+
+.narrowcolumn #commentform label small{
+float: right;
+}
+
+.narrowcolumn .add_comment h3#respond{
+font-family: Helvetica, Arial, Verdana;
+font-size: 20px;
+text-transform: uppercase;
+padding:10px;
+margin: 10px 0px;color: #293538;
+border-bottom: 2px solid #293538;
+text-align: right;
+position: absolute;
+top:-10px;
+left: 0px;
+letter-spacing: -1px;
+width: 430px;
+}
+
+.narrowcolumn .add_comment{
+position: relative;
+padding:55px 10px 40px 10px;
+margin: 10px 0px;
+}
+
+.narrowcolumn #commentform #author, .narrowcolumn #commentform #email, .narrowcolumn #commentform #url{
+float: right;
+border:2px solid #7BA2AD;
+font-family: Arial, Helvetica, Verdana;
+font-size: 16px;
+padding:5px 5px;
+width:245px;
+}
+.narrowcolumn #commentform #author:focus, .narrowcolumn #commentform #email:focus, .narrowcolumn #commentform #url:focus, .narrowcolumn textarea:focus{
+background:#FFFFF5;
+}
+
+.narrowcolumn #commentform p{
+clear: both;
+overflow: hidden;
+padding: 5px 0px;
+height: 1%;
+}
+
+
+
+.innerpage .post{
+padding-top: 40px !important;
+}
+
+#sidebar ul li ul li{
+border-bottom:1px solid #1F2A2C;
+}
+
+#sidebar ul li ul.top_commenters{
+margin: 0px auto;
+}
+
+
+#sidebar ul li ul.top_commenters li{
+padding-top: 10px;
+}
+
+#sidebar ul li ul{
+width:80%;
+margin: 0px auto;
+}
+
+#sidebar ul li ul li{
+display: block;
+padding-bottom: 10px;
+}
+
+#sidebar ul li ul li a{
+color: #888d8f;
+font-family: Helvetica, Arial, Verdana;
+text-transform: uppercase;
+letter-spacing: -1px;
+font-size: 13px;
+text-decoration: none;
+}
+
+#sidebar ul li ul{
+margin: 10px auto 0px auto;
+}
+
+#sidebar .description{
+width:230px;
+font-family: Helvetica, Arial, Verdana;
+margin: 0px auto;
+color: #a8acad;
+}
+
+#sidebar .searchfield{
+width:250px;
+margin: 0px auto;
+overflow:hidden;
+clear: both;
+padding: 5px 0px 3px 0px;
+}
+
+#sidebar .searchfield span, #sidebar .searchfield label{
+display: none;
+} 
+
+#sidebar .searchfield input#searchsubmit{
+border: none;
+width:55px;
+height: 28px;
+display: block;
+overflow: hidden;
+text-indent: -999px;
+line-height: 0;
+float: left;
+background: #0d1618 url({TEMPLATE_PATH}img/search_btn.gif) no-repeat center;
+cursor: pointer;
+}
+
+#sidebar .searchfield input{
+border: none;
+color: #ededed;
+background: #101c1f;
+float:left;
+height:16px;
+padding:6px;
+width:183px;
+}
+
+.sidebar-right{
+width:175px;
+float: left;
+padding-top: 70px;
+margin-left: 12px;
+}
+
+.narrowcolumn, .widecolumn{
+float: left;
+padding-top:40px;
+width:480px;
+}
+
+.narrowcolumn .post{
+padding-right: 30px;
+position: relative;
+padding-bottom: 0px;
+padding-top: 113px;
+_overflow: hidden;
+_width: 468px;
+}
+
+p.postmetadata{
+padding-bottom: 20px;
+display: none;
+}
+
+.comments a{
+text-decoration: none;
+font-size: 12px;
+text-transform: lowercase;
+background: #D0E6EC url({TEMPLATE_PATH}img/comments.gif) no-repeat scroll 99% 50%;
+display: block;
+margin-left: -15px;
+padding-right: 25px;
+width:460px;
+text-align: right;
+margin-bottom: 20px;
+}
+
+.narrowcolumn .post .comments a span{
+font-size: 12px;
+}
+
+.PostHead{
+left:-30px;
+position:absolute;
+top:30px;
+}
+
+.PostHead h2, .innerpage .post h2{
+float: left;
+width:380px;
+_width:360px;
+padding-top: 5px;
+padding-left: 11px;
+font-size: 30px;
+font-family: Helvetica, Arial, "Trebuchet MS";
+letter-spacing: -1px;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.innerpage .post h2{
+float:none;
+padding-left: 0px;
+width:auto;
+}
+
+.PostHead h2 a{
+font-size: 30px;
+font-family: Helvetica, Arial, "Trebuchet MS";
+letter-spacing: -1px;
+text-transform: uppercase;
+text-decoration: none;
+
+}
+
+.PostTime{
+float:left;
+overflow:hidden;
+width:100px;
+
+}
+.PostHead small.PostDet, .PostHead small.PostDet a{
+font-size: 12px;
+text-decoration: none;
+}
+
+.PostHead small.PostDet{
+clear:both;
+display:block;
+left:10px;
+position:absolute;
+top:-26px;
+height: 23px;
+width:395px;
+overflow: hidden;
+display: none;
+}
+
+.PostTime b{
+background:#C30301 none repeat scroll 0 0;
+clear:both;
+color:#FFFFFF;
+display:block;
+font-family:Helvetica,Arial,"Trebuchet MS";
+font-size:62px;
+font-weight:bold;
+height:54px;
+line-height:58px;
+overflow:hidden;
+padding:0;
+text-align:right;
+width:95px;
+z-index:999;
+}
+.PostTime pm,
+.PostTime i {
+background: #293538;
+color: #FFF;
+padding:0px;
+display: block;
+width:95px;
+left: 0;
+font-size: 14px;
+text-align: right;
+font-style: normal;
+}
+
+#page{
+background: transparent url({TEMPLATE_PATH}img/wrapperbg.jpg) repeat-x center top;
+width:959px;
+margin: 0px auto;
+overflow: hidden;
+padding: 0px 15px 0px 30px;
+position: relative;
+z-index: 999;
+}
+
+.bgimage{
+width:1004px;
+margin: 0px auto;
+background: #FFF url({TEMPLATE_PATH}img/sidebarbg.gif) repeat-y 511px 0px;
+}
+
+div.twitter{
+background:#FFFFFF url({TEMPLATE_PATH}img/twitter.gif) no-repeat scroll left top;
+margin-left:-14px;
+overflow:hidden;
+padding-top:20px;
+width:200px;
+}
+
+div.twitter-content{
+border-top:medium none;
+overflow:hidden;
+padding:0px 15px 0px 35px;
+height: 135px;
+}
+
+div.twitter-content *{
+font-size: 12px;
+line-height: 18px;
+width: 100%;
+}
+
+div.twitter-content li{
+padding-top: 2px;
+}
+
+div.twitter-content li span{
+clear: both;
+display: block;
+width:131px;
+}
+
+a.followme{
+display: block;
+width: 175px;
+padding: 0 0 10px 0;
+text-indent: -999px;
+letter-spacing: -1px;
+color: #AB3730;
+text-decoration: none;
+}
+
+img.pdlogo{
+margin-top: 15px;
+clear: both;
+}
+
+.google-ads{
+width:175px;
+overflow: hidden;
+padding-top: 20px;
+float: left;
+display: block;
+margin-left: 15px;
+}
+
+
+#sidebar ul.top_commenters li{
+float: left;
+padding-left: 15px;
+}
+
+#sidebar ul.top_commenters li span img{
+border: 3px solid #101C1F;
+overflow: hidden;
+display: block;
+width:32px;
+height:32px;
+}
+
+#sidebar ul.top_commenters li span img:hover{
+border: 3px solid #FFF;
+}
+
+
+/* Comments */
+
+
+ol.commentlist li{
+padding: 10px;
+background: #D0E6EC;
+margin-bottom: 15px;
+border: 2px solid #7BA2AD;
+height: 1%;
+border-top: none;
+font-size: 14px;
+clear: both;
+}
+
+ol.commentlist li cite a{
+font-size: 22px;
+font-style: normal;
+text-decoration: none;
+}
+
+.authordiv{
+padding-bottom:25px;
+background: transparent url({TEMPLATE_PATH}img/author.gif) no-repeat left bottom;
+overflow:hidden;
+padding:13px 0px 13px 73px;
+_height: 48px;
+}
+.authordiv img{
+float: left;
+border: 2px solid #7BA2AD;
+}
+li.authorli{
+padding: 0px !important;
+margin: 0px !important;
+background: none !important;
+border: none !important;
+}
+
+.authordiv cite{
+padding-left: 10px;
+float: left;
+font-size: 13px;
+width: 200px;
+}
+
+.authordiv small{
+float: left;
+width:330px;
+}
+
+.authordiv small a{
+font-size: 13px;
+padding-left: 10px;
+text-decoration: none;
+}
+
+.authordiv cite a{
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+}
+
+.CommWidth h3#comments{
+background: #242f31;
+color: #FFF;
+padding-left: 10px;
+margin: 10px auto;
+}
+
+h3#respond{
+background: transparent !important;
+}
+
+.entry{
+padding: 10px 0px;
+}
+
+.entry p{
+padding-bottom: 10px;
+}
+
+.clear{
+clear: both;
+overflow: hidden;
+height: 1%;
+}
+
+#footer{
+width:100%;
+background: #111f22;
+padding: 10px 0px;
+border-top: 4px solid red;
+}
+
+.footerwrap, .footerwrap *{
+width:1000px;
+font-size: 13px;
+margin: 0px auto;
+color: #77959B;
+}
+
+.footerwrap a{
+color: #FFF;
+}

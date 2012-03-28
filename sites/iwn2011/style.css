@@ -1,0 +1,62 @@
+body {	
+	color: #25272b;	
+	font-size: 13px;	
+	word-spacing: 0px;	
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	line-height: 1.4;	
+	text-shadow: 0px 1px 1px #fff;
+}
+
+#wrap {	
+	height: 600px;	
+	width: 620px;
+	background-image: url(img/crayons.png);
+	background-repeat: no-repeat;
+}
+
+.red {
+	color: #ff0f18;
+}
+
+.white {
+	color: #ffffff;
+}
+
+#content {
+	background-color: #d1d2d9;
+	float: right;
+	width: 450px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+	min-height: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a0a0a0), to(#d1d2d9), color-stop(0.1, #d1d2d9));
+	background-image: -moz-gradient(linear, left top, left bottom, from(#a0a0a0), to(#d1d2d9), color-stop(0.1, #d1d2d9));
+	border-width: 1px;
+	border-color: #aeaeae;
+	border-style: solid;
+}
+
+.article {
+	margin-bottom: 10px;
+}
+
+.textbox {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; 
+	background-color: rgba(0,0,0,0.2);
+	padding: 20px;
+	font-size: 16px;
+}
+
+.textbox a {
+	text-decoration: none; 
+	color: black;
+}
+
+.textbox img {
+	float: left; 
+	margin-right: 10px;
+	border: none;
+}

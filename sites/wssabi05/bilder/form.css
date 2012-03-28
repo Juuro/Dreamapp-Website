@@ -1,0 +1,40 @@
+A:link {COLOR: #FF0000; TEXT-DECORATION: none}
+A:visited {COLOR: #FF0000; TEXT-DECORATION: none}
+A:active {COLOR: #FF0000; TEXT-DECORATION: none}
+A:hover {COLOR: #FF0000; TEXT-DECORATION: underline}
+body { font-family:Verdana,Arial,sans-serif; font-size:12pt; }
+
+body { color:#FFFFFF;
+       background-color:#000000;
+       font-family:Verdana,Arial,sans-serif;
+       font-size:12pt;
+
+       scrollbar-base-color:#FFFFFF;
+       scrollbar-3dlight-color:#FFFFFF;
+       scrollbar-arrow-color:#FFC000;
+       scrollbar-darkshadow-color:#A0A0A0;
+       scrollbar-face-color:#FFFFFF;
+       scrollbar-highlight-color:#D0D0D0;
+       scrollbar-shadow-color:#000000;
+       scrollbar-track-color:#FFFFFF;
+     }
+
+td   { color:#FFFFFF;
+       background-color: #171717;
+       font-family:Verdana,Arial,sans-serif;
+       font-size:12pt;
+     }
+
+
+span.klein { font-size:8pt; }
+span.gross { font-size:18pt; }
+span.mittel { font-size:10pt; }
+span.mittelfett { font-size:10pt; font-weight: bolder ; }
+span.beschreibung_bild { font-size:10pt; }
+span.beschreibung_galerie { font-size:10pt; }
+
+
+.galeriehintergrundrahmen {  }
+.galeriehintergrund {  }
+.tabellenrahmen { background-color:#F2F2FF ; }
+.tabellenhintergrund { background-color:#000000 ; }

@@ -1,0 +1,88 @@
+a:link {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+color : #00699C;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:active {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color: #006699; 
+text-decoration: none;
+font-weight: bold;
+}
+
+a:visited {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+text-decoration: none; 
+color: #74A0CD;
+font-weight: bold;
+}
+
+a:hover {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+color: #FF8000; 
+text-decoration: underline;
+; font-weight: bold}
+
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+color: #00699C; 
+background-color: #EFEFEF;
+font-weight: bold;
+SCROLLBAR-FACE-COLOR: #b9c1d2;
+SCROLLBAR-SHADOW-COLOR: #8c99b5;
+SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+SCROLLBAR-3DLIGHT-COLOR: #697CAD;
+SCROLLBAR-DARKSHADOW-COLOR: #697CAD;
+SCROLLBAR-TRACK-COLOR: #EFEFEF;
+SCROLLBAR-ARROW-COLOR: #656b70;
+}
+
+.rahmen {
+border: 1px solid #74A0CD;
+}
+
+td {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+color: #000000;
+}
+
+.tr1 {
+background-color: #CADBEC;
+}
+
+.tr2 {
+background-color: #B6CDE4;
+}
+
+.tr3 {
+background-color: #A8C4DF;
+}
+
+
+input { 
+font-family: Verdana, Helvetica; 
+font-size:12;
+color: #000000;
+border:1px #000000 solid; 
+background-color:#FFFFFF; 
+}
+
+textarea { 
+font-family: Verdana, Helvetica; 
+font-size:12;
+color: #000000;
+border:1px #000000 solid; 
+background-color:#FFFFFF; 
+}
+
+select {
+font-family: Verdana, Helvetica; 
+font-size:12;
+color: #000000;
+border:1px #000000 solid; 
+background-color:#FFFFFF; 
+}

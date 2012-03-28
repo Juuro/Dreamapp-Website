@@ -1,0 +1,130 @@
+/*
+  Morpheus Theme for phpBB version 2.0.x
+  Created by Vjacheslav Trushkin
+  http://www.phpbbstyles.com
+*/
+
+@import url(style_main.css);
+
+body { 
+	background-color: #FFF; 
+	scrollbar-arrow-color: #AC7B54;
+	scrollbar-face-color: #FFFFFF; 
+	scrollbar-track-color: #E0E0E0; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #C0C0C0; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #B0B0B0;
+}
+
+hr { 
+	border-color: #AD7951;
+}
+
+/* links */
+a { 
+	color: #AC7B54; 
+}
+a:visited { 
+	color: #9B6E49;
+}
+a:hover, a:active { 
+	color: #FF9C00; 
+}
+
+/* header */
+#header-box { 
+	background-image: url(images/brown/logo_bg.gif); 
+}
+/* header login form */
+#header-login {
+	background: url(images/brown/logo_right.gif) top right no-repeat;
+}
+.login-input, .login-submit {
+	background-color: transparent;
+	border-color: #956946;
+	color: #6C4B32;
+}
+.login-submit {
+	background-color: #C39A79;
+}
+.login-input:hover, .login-submit:hover {
+	background-color: #C39A79;
+	border-color: #6E4E34;
+}
+.login-input:focus, .login-submit:focus {
+	background-color: #CCA587;
+	color: #000;
+}
+* html .login-input { 
+	background-color: transparent; 
+	border-color: #6E4E34;
+	color: #000;
+}
+* html .login-submit { 
+	background-color: #C39A79;
+	border-color: #6E4E34;
+	color: #000;
+}
+
+#navigation { 
+	background-image: url(images/brown/logo_bg2.gif); 
+}
+
+/* table headers */
+table.hdr { 
+	background-image: url(images/brown/hdr_bg.gif); 
+	color: #AA7952; 
+}
+table.hdr a, table.hdr a:visited { 
+	color: #AA7952; 
+}
+table.hdr a:hover, table.hdr a:active { 
+	color: #FF9C00; 
+}
+
+td.postline { 
+	background-color: #AD7951; 
+}
+
+/* rows */
+td.row, .row1, .row2, .row3 { 
+	background-color: #FFF;
+}
+
+/* th */
+th, td.th { 
+	color: #F6F6F5; 
+	background: #F2F2F1 url(images/brown/bg_th.gif) top left repeat-x; 
+	border-color: #CB976F; 
+}
+
+/* bottom row */
+td.catBottom { 
+	background: #B18867 url(images/brown/bg_cat.gif) top left repeat-x;
+}
+
+.nav { color: #FF9C00;}
+.nav a, .nav a:visited { color: #AC7B54; }
+.nav a:hover, .nav a:active { color: #FF9C00; }
+
+table.nav { border-color: #C38F67; }
+
+a.forumlink_new, a.forumlink_new:visited { color: #F2A62E; }
+
+.moderators a:hover, .moderators a:active { color: #FF9C00; } 
+
+input.post, textarea.post, select, input.button, input.mainoption, input.liteoption { border-color: #886040; }
+
+select optgroup { background-color: #C8C5C4; }
+
+a.topiclink_new, a.topiclink_new:visited { color: #FF9C00; }
+
+.pagination a, .pagination a:visited { border-color: #D9D7D5; background-color: #EBEAEA; }
+.pagination a:hover, .pagination a:active { border-color: #EEEDEB; }
+
+.gotopage a, .gotopage a:visited { border-color: #DADCDF; background-color: #EDEBEA; }
+.gotopage a:hover, .gotopage a:active { border-color: #E8E6E5; }
+
+td.spacerow { background-image: url(images/brown/bg_th.gif); }
+

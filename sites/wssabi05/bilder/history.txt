@@ -1,0 +1,101 @@
+-------- toms-galerie ------- History --------
+
+Erste Codezeile ;o)
+18.07.2002
+
+V0.9.beta
+12.10.2002
+Erste lauffähige Version der Galerie
+
+V0.9.1beta - V0.9.5beta
+Laufende Layoutverbesserungen, logischere Gestaltung der Links, Beseitigung kleiner Bugs und Darstellungsfehler. CSS-Eigenschaften verbessert, Dateizugriff vereinfacht ... usw.
+
+V1.0
+16.12.2002
+Erste öffentlich zum download bereitgestellte Version inkl. readme.html (Bedienungsanleitung) und Bedienhinweisen im Script.
+
+V1.0.1
+10.01.2003
+Vorschaubilder werden nun mit Größe ausgezeichnet zur Vermeidung von Darstellungsfehlern insbesondere bei Netscape.
+Die Qualität der erzeugten Vorschaubilder wird auf 65 festgelegt. (So soll vermieden werden, dass einige Server einfach die niedrigste Qualität wählen.)
+Datei .htaccess wieder aus Ordner cache entfernt (wegen Inkompatibilität mit manchen Servern).
+Erklärum im Script etwas erweitert. (Hinweis auf die Stellen an denen eigener HTML-Code eigefügt werden kann.)
+
+V1.0.2
+17.01.2003
+Möglichkeit eingebaut, eigenen HTML-Code und Metatags in externen Dateien zu speichern, um die Übersichtlichkeit zu erhöhen und die Handhabung des Scripts zu vereinfachen. (Man muss nun nicht jedesmal im Scriptquellcode rumsuchen ;-)
+Nun können für Thumbnails in Übersicht, Navigation und Galerieübericht jeweils eigene Größen angegeben werden.
+
+V1.1
+11.03.2003
+Erklärende Texte können nun zu den Bildern und den Galerien erstellt werden. (Als Textdatei)
+Galerieübersicht umgestaltet (alle Galerien nun untereinander, daneben die Beschreibung).
+Alte Ansicht kann aber auch weiter verwendet werden ($zeige[galerie]).
+Variablen logischer gestaltet.
+Flexibilität der Anzeige erhöht. Es kann nun sehr genau gewählt werden, was, wie, wo angezeigt werden soll.
+Dazu dienen unter anderem die Variablen $css[], $name[], $zeige[], $link[], $textlaenge[] und $max[].
+Vorschaubilder einer Galerie können nun auf mehrere Seiten verteilt angezeigt werden. (Voreinstellung = 20 Thumbnails).
+Darstelungsfehler unter Netscape 4 beseitigt.
+
+V1.1+
+05.04.2003
+Bug beseitigt:
+Unerklärlicher Zeilenumbruch unter Netscape4.X brutal verhindert ;-)
+
+V1.1.1
+23.04.2003
+Bug beseitigt:
+Bildgröße des Originalbildes wird nun korrekt angezeigt.
+Includevariable bei wird nun bei Anzeige des vollen Beschreibungstextes auch mit übergeben. (vorher sprang die Galierie da auf die Startseite der Homepage)
+Includevariablen vorgegeben (zum besseren Verständnis und Vermeidung von Fehlern beim ausführen des Scripts durch fehlende Variablen)
+
+V1.1.2
+20.06.2003
+-Bug beseitigt:
+In Galerieübersicht wird nun keine leere Bildübersicht mit angezeigt, wenn keine Bilder vorhanden sind.
+-Maximale und minimale Höhe, Breite und Dateigröße der Originalbilder kann nun gewählt werden.
+
+V1.2
+08.07.2003
+-Umfangreiche Sortiermöglichkeiten hinzugefügt:
+Bilder nach Name, Datum, Dateigröße, Höhe, Breite
+Galerien nach Name Erstellungsdatum, Neustem Bild in Galerie, Anzahl der Bilder
+Galerievorschaubild nach Name, Datum, Dateigröße, Höhe, Breite.
+Sortierung umkehrbar.
+-Kleine Bilder werden direkt geladen (es wird kein Thumbnail erstellt,
+wenn das Bild kleinr ist, als das Thumbnail wäre),
+so kann die Galiere ohne GD ausgeführt werden, wenn alle Bilder nur klein sind (Bulletsammlung ec.)
+-Möglichkeit Gif- PNG- oder SWF-Bilder (wahlweise) mit einzulesen. (ACHTUNG, die Thumbnailerstellung hängt von der installierten GD-Version ab.)
+-Beginn der Codeoptimierung für Templates
+
+
+............................................................................................
+
+V2.0 alpha1
+12.08.03
+-Code weiter optimiert und "gesäubert".
+-Templates eingeführt
+-Funktion img entwickelt (dadurch kann die thumbnail.php entfallen!!)
+-Script unterteilt (index.php config.php und templates)
+-V1.2-Code in Funktionen und Temlates "umgeschrieben".
+
+V2.0 alpha2
+20.09.2003
+-erste zum download freigegebene Alpha für Tester und Entwickler
+-Dateneverarbeitung völlig neu gestaltet (Funktion sammeln() usw.)
+-Alle vorhandenen Funktionen und Verlinkung an neue Datenstruktur angepasst, ggf. neu geschrieben.
+-Templates verbessert und an neue Datenstruktur angepasst.
+-Es können nun beliebig viele Unterkategorien angelegt werden.
+->es fehlen noch die Sortierung, die Begrenzung der Bilder und Galerien pro angezeigte Seite und ein neues Navigationstool für Galerien(Kategorien).
+
+...............................................................................................
+
+V1.3
+27.11.2005
+-Get-Variablen freigescahltet 
+-GD-Updata in Form von thumbnail2.php eingearbeitet
+-für die Navigation in Contentsystemen kann nun einfach der Linkanhang modifiziert werden und so auch mehrere Variablen per GET übergeben
+
+V1.3.1
+20.12.2005
+-Bugfix: Freischaltung der GET-Variablen auch in thumbnail-Datei

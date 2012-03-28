@@ -1,0 +1,112 @@
+#agb {
+width:auto;
+}
+
+#content,#footer {
+margin:10px;
+}
+
+#header,#content,#footer {
+clear:left;
+}
+
+#wrapper {
+width:708px;
+}
+
+* {
+margin:0;
+padding:0;
+}
+
+.adsize_misc,.referer_misc {
+display:none;
+margin-left:341px;
+clear:both;
+}
+
+.error {
+font-size:x-small;
+color:#ff0000;
+margin:0;
+}
+
+.left {
+text-align:left;
+padding:0;
+}
+
+.left label,.left input,.left select,.left textarea,.left form p span,.left form p p,label.error {
+display:inline;
+float:none;
+width:auto;
+margin-bottom:0;
+}
+
+.uploadedimage {
+max-width:600px;
+max-height:600px;
+}
+
+a {
+color:#FF6705;
+}
+
+body {
+font-family:Helvetica;
+}
+
+form {
+padding:.5em;
+}
+
+form p {
+display:block;
+clear:both;
+}
+
+h1 {
+font-size:larger;
+margin-bottom:30px;
+}
+
+input[id=number] {
+width:76px;
+}
+
+input[id=street] {
+width:235px;
+margin-right:10px;
+}
+
+input[type=submit],input[type=reset] {
+display:inline;
+float:none;
+width:auto;
+margin:0 10px 0 0;
+}
+
+label,form p span {
+text-align:right;
+padding-right:1em;
+}
+
+label,input,select,textarea,form p span,form p p {
+display:block;
+float:left;
+width:325px;
+margin-bottom:30px;
+}
+
+label.error {
+clear:both;
+}
+
+label[for*=newsletter] {
+margin-left:0.5em;
+}
+
+textarea {
+width:325px;
+height:50px;
+}

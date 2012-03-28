@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>toms-galerie readme V1.3 </title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<a name="0"></a>
+
+<font size="+3">toms-galerie V1.3 </font>
+<br>
+<br>
+
+<b><u>Installations- und Bedienungsanleitung </u></b>
+ <br>
+ <br>
+
+<a href="#1"><b>1. Einf&uuml;hrung</b></a> <br>
+
+<a href="#2"><b>2. Vorraussetzungen </b></a>    <br>
+
+<a href="#3"><b>3. Installation </b></a> <br>
+
+<a href="#4"><b>4. Nutzung der Galerie </b></a> <br>
+
+<a href="#5"><b>5. Anpassen an die eigenen Bed&uuml;rfnisse</b></a> <br>
+
+ <br>
+ <br>
+ <br>
+
+
+ <a name="1"></a>
+<b>1. Einf&uuml;hrung</b> <br>
+
+Ich bedanke mich und begl&uuml;ckw&uuml;nsche Sie zur Entscheidung f&uuml;r toms-galerie, der flexiblen Bildergalerie f&uuml;r ihre Homepage und w&uuml;nsche ihnen mit dem Script viel Freude und eine Aufwertung ihrer Internetpr&auml;senz.  Um dies zu gew&auml;hrleisten beachten sie bitte nachfolgende Anleitung zur Installation und Bedienung.
+Die Software ist kostenlos, also Freeware.  <br>
+
+<u>Hinweis:</u> Der Autor &uuml;bernimmt keine Verantwortung f&uuml;r die mit der Galerie gezeigten Inhalte. Diese liegt allein beim Nutzer des Scripts (z.B. dem Webmaster).
+Das Entfernen des sichtbaren Copyrights ist nicht gestattet.
+       <br>
+       <br>
+       <a href="#0">nach oben</a>
+       <br>
+       <br>
+
+   <a name="2"></a>
+<b>2. Vorraussetzungen </b><br>
+
+Um toms-galerie nutzen zu k&ouml;nnen muss ihr Webserver PHP (mit GD Bibliothek 1.6) unterst&uuml;tzten und gen&uuml;gend Speicherplatz  bieten um all ihre Bilder sowie die Cachedaten und das Script selbst zu speichern. Letzteres ist allerdings nur wenige Kilobyte gro&szlig;. Des weiteren kann die Galerie ohne Cache betrieben werden, was Speicherplatz spart, aber die Geschwindigkeit drastisch senkt, sowie die Serverlast extrem erh&ouml;ht. (Darum nicht empfohlen!) Die Bilder m&uuml;ssen im Jpegformat vorliegen (bild.jpg). Bildbeschreibungen m&uuml;ssen im Textformat gespeichert sein und passend zum Bild (oder der Galerie) den entsprechenden Namen tragen (bild.jpg.txt).
+     <br>
+     <br>
+     <a href="#0">nach oben</a>
+<br>
+<br>
+<a name="3"></a>
+<b>3.Installation </b><br>
+
+Kopieren sie die Dateien <i>index.php</i>, <i>thumbnail.php</i> und  <i>form.css</i> sowie das Verzeichnis <i>cache</i> und das Verzeichnis <i>bilder</i> (Achtung, Kleinschreibung bei Verzeichnissen <i>bilder</i> und <i>cache</i> beibehalten!) mit einem FTP-Programm auf ihren Webserver. (ggf. in ein eigenes Unterverzeichnis) Setzten sie nun die Rechte des Verzeichnisses <i>cache</i> auf chmod 777 (mit den meisten guten FTP-Programmen m&ouml;glich z.B. LechFTP).
+<br>
+Nun ist das Script in der Grundkonfiguration betriebsbereit.
+<br>
+<br>
+<a href="#0">nach oben</a>
+<br>
+<br>
+
+   <a name="4"></a>
+<b>4. Nutzung der Galerie</b><br>
+
+Um die Galerie sinnvoll zu nutzten m&uuml;ssen sie nun nur noch ihre Bilder und (optional) Beschreibungen auf den Server kopieren.
+Das Script bietet ihnen 3 M&ouml;glichkeiten: <br>
+<br>
+
+<u>a) Sie zeigen alle Bilder in einer Galerie:</u><br>
+
+Dazu kopieren sie einfach ihre Bilder (bild.jpg) und die Beschreibungstextdateien (bild.jpg.txt) in das Verzeichnis <i>bilder</i> auf dem Server. Das Script ordnet diese nun automatisch nach Dateinamen in einer Galerie an, erzeugt die entsprechenden Thumbnails (kleine Vorschaubilder) und speichert diese beim ersten Aufruf der Galerie im Verzeichnis <i>cache</i> ab. Des weiteren wird zu jedem Bild die Beschreibung angezeigt, die in der entsprechend benannten Textdatei gespeichert ist.
+<br> <br>
+
+<u>b) Sie ordnen ihre Bilder in mehreren Galerien an:</u><br>
+
+Legen sie dazu im Verzeichnis<i> bilder</i> auf dem Server Unterverzeichnisse mit den Namen der Galerien an, die sie zeigen wollen (z.B. Autos Katzen Urlaub). Sie k&ouml;nnen nun ihre Galeriebeschreibungen in das  Verzeichnis <i>bilder</i>  kopieren (z.B. Autos.txt Katzen.txt). Achten Sie auf Gro&szlig;- und Kleinschreibung! Kopieren sie nun ihre Bilder (bild.jpg) und die Beschreibungstextdateien (bild.jpg.txt) in das jeweilige Unterverzeichnis. Das Script ordnet nun automatisch die Galerien und die Bilder darin nach Dateinamen, erzeugt die entsprechenden Thumbnails (kleine Vorschaubilder) und speichert diese beim ersten Aufruf im Verzeichnis <i>cache</i>. Des weiteren wird zu jedem Bild die Beschreibung angezeigt, die in der entsprechend benannten Textdatei gespeichert ist.
+<br>
+<br>
+<u>c) Sie haben Bilder und Galerien im Verzeichnis Bilder:</u><br>
+
+Es werden in der Galerie&uuml;bersicht zus&auml;tzlich die Bilder angezeigt, die sich im Verzeichnis <i>bilder</i> befinden. Alles weitere wie in Punkt a und b.
+<br>
+<br>
+Wenn sie einzelne Bilder, oder ganze Galerien (Verzeichnis) vom Server l&ouml;schen werden diese auch nicht mehr in der Galeie angezeigt.<br>
+<u>Tip:</u><br>
+Wenn sie Bilder l&ouml;schen oder tauschen sollten sie unbedingt auch den Cache leeren! (Inhalt des Verzeichnisses <i>cache</i> l&ouml;schen.)
+<br>
+<br>
+
+<a href="#0">nach oben</a>
+<br>
+
+<br>
+ <a name="5"></a>
+<b>
+5. Anpassen an die eigenen Bed&uuml;rfnisse:</b><br>
+
+Ein gro&szlig;er Vorteil dieses Scripts ist seine Variabilit&auml;t. So k&ouml;nnen sie das Aussehen und die Funktion des Scripts ihrer Homepage anpassen.
+ <br>
+ <br>
+
+<u>a) Farbe und Form: </u><br>
+
+Schriftfarben, Hintergrundfarben, Rahmenfarben, Schriftarten und Schriftgr&ouml;&szlig;en, sowie evtl. Hintergrundbilder lassen sich in der CSS-Datei anpassen. (&Ouml;ffnen sie dazu die Datei form.css in einem Texteditor und passen diese entsprechend an. Grundlegende Kenntnisse in css vorausgesetzt. Informationen dazu finden sie unter http://www.teamone.de/selfhtml )
+Rahmen und dessen St&auml;rke, Anzahl der Spalten, Gr&ouml;&szlig;e der Thumbnails, sowie die Bildgr&ouml;&szlig;e im Layout, Anzeige von Dateinamen und Bildgr&ouml;&szlig;e und weitere variable Anzeigem&ouml;glichkeiten lassen sich im Konfigurationsteil des Scripts anpassen.
+(&Ouml;ffnen sie dazu die Datei <i>index.php</i> in einem Texteditor und folgen sie den Anweisungen im Konfigurationsteil am Begin der Datei.)
+ <br>
+ <br>
+
+<u>b) Layout anpassen / eigenen HTML-Code einf&uuml;gen: </u><br>
+
+Viele Layoutanpassungen lassen sich bereits in der Konfiguration, bzw. per css realisieren. (Anzeigeoptionen von Titel, Bildnamen und anderen frei editierbaren Elementen (wie Links), sowie in Punkt a beschriebene Details.)
+Des weiteren besteht die M&ouml;glichkeit eigenen HTML-Code in das Script einzuf&uuml;gen. Um dies zu erleichtern habe ich die Stellen, wo dies m&ouml;glich ist eindeutig im Code ausgezeichnet und etwas Platz gelassen. Nachfolgend m&ouml;chte ich nun noch einmal die Stellen nennen:
+<br>
+HTML-Kopf: Dort k&ouml;nnen eigene Megatags eingef&uuml;gt werden (f&uuml;r Suchmaschinen)
+<br>
+Oberer Teil der HTML-Seite (oberhalb der Galerie)
+<br>
+Unterer Teil der HTML-Seite (unterhalb der Galerie)
+<br>
+Es ist so auch m&ouml;glich die Galerie in eine eigene Tabelle einzuf&uuml;gen. Wobei die Zelle im oberen Teil beginnt und im unteren Teil geschlossen wird. Doch so viel sollte eigentlich jeder wissen, der vorhat in dem Script rumzuschreiben ;o)<br>
+ Es besteht au&szlig;erdem die M&ouml;glichkeit eigenen HTML-Code und die Metatags zur einfacherere Handhabung in externen
+ Dateien zu verwalten. Diese Dateien sollten nur den HTML-Body enthalten
+ (also das was zwischen <body> und </body> steht!)
+ <br>
+ <br>
+
+<u>c) Technische Anpassung an die eigene Homepage:</u><br>
+
+&Ouml;ffnen sie dazu die Datei <i>index.php</i> in einem Texteditor und passen die Einstellungen im Konfigurationsteil an. Sie k&ouml;nnen dort Die Startseite ihrer Homepage eintragen, den Namen der Datei definieren, Bilder und Cacheverzeichnis  und Einstellungen f&uuml;r das Einf&uuml;gen der Galerie per include-Befehl.
+<br>
+<u>Besonderheiten bei Content-Systemen und dem Einf&uuml;gen mit include:</u>   <br>
+
+Der Dateiname ist der des Scripts welches die Datei per include einf&uuml;gt (Also z.B. die Startseite ihrer Homepage. Weiterhin als Hauptscript bezeichnet.)
+<br>
+Die Dateien <i>thumbnail.php</i> und <i>thumbnail2.php</i> m&uuml;ssen im selben Verzeichnis wie das Hauptscript liegen! (oder sie geben in der Variable $setup[thumbnail] den Pfad relativ zum Hauptscript mit an.)
+<br>
+Die Datei <i>form.css</i> muss vom Hauptscript geladen werden, bzw. deren Inhalt in die Haupt-css-Datei eingef&uuml;gt werden.
+<br>
+F&uuml;r die Navigation im Content-System kann die Variable $setup[linkanhang] angepasst werden. Der Inhalt kann nun aus beliebig vielen auch Tempr&auml;ren Variablen oder SID bestehen.
+<br>
+<br>
+
+<a href="#0">nach oben</a>
+</body>
+</html>

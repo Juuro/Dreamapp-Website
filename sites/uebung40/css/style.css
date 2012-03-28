@@ -1,0 +1,24 @@
+html {
+    background: rgb(50,50,50);
+}
+
+table th {
+    background: rgb(237,237,237);
+}
+
+table {
+    font-family: 'Lucidy Grande', Verdana, Arial;
+    background: rgb(255,255,255);
+    border-collapse:collapse;
+}
+
+table td, table th {
+    border-right: 1px solid rgb(237,237,237);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table.students {
+    margin: auto;
+    padding-top: 50px;
+}
